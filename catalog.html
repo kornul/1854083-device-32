@@ -6,54 +6,55 @@
     </head>
     <body>
         
-  <header class="page-heare">
-    <nav class="navigation">
-        <a class="navigation-logo" href="index.html">
-            <img class="page-header-logo"  alt="Логотип device" src="" >
-        </a>
-      <ul class="navigation-list navigation-user">
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Поиск по сайту</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Войти</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Сравнить</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Корзина</a>
-        </li>
-      </ul>
-      <ul class="navigation-list">
-        <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="catalog.html">Каталог товаров</a>
-        </li>
-        <li class="navigation-item">
-            <a class="button button-all" href="#">Ellipse</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="delivery.html">Доставка</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="warranty.html">Гарантия</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="contacts.html">Контакты</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+        <header class="page-header">
+            <nav class="navigation">
+                    <img class="page-header-logo"  alt="Логотип device" src="">
+              <ul class="navigation-list navigation-user">
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#"></a>  
+              <form class="search" action="/" method="post">
+                <input class="search-input" type="text" placeholder="Поиск по сайту">
+              </form>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#">Войти</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#">Сравнить</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#">Корзина</a>
+                </li>
+              </ul>
+              <ul class="navigation-list">
+                <li class="navigation-item">
+                  <a class="navigation-link navigation-link-current" href="#">Каталог товаров</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="button button-all" href="#">Ellipse</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#">Доставка</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#">Гарантия</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </header>
 
-  <main>
-      <header class="header">
-    <h1 class="header-title">Моноподы для селфи</h1>
-     <ul class="breadcrums"></ul>
+  <main class="main-inner">
+      <header class="inner-header">
+    <h1 class="inner-header-title">Моноподы для селфи</h1>
+     <ul class="breadcrums">
        <li class="breadcrums-item">
-              <a class="breadcrums-link" href="index.html">Главная</a>
+              <a class="breadcrums-link" href="#">Главная</a>
             </li>
             <li class="breadcrums-item">
-                <a class="breadcrums-link" href="catalog.html">Католог товаров</a>
+                <a class="breadcrums-link" href="#">Католог товаров</a>
             </li>
             <li class="breadcrums-item">
                 <a class="breadcrums-link">Моноподы для селфи</a>
@@ -101,7 +102,7 @@
                 </label>
             </li>
             <li class="catalog-filter-item">
-                <lable class="control">
+                <label class="control">
                     <input class="visually-hidden control-input" type="checkbox" name="Синий">
                     <span class="control-mark"></span>
                     <span class="control-label">Синий</span>
@@ -228,24 +229,30 @@
         <h2 class="visually-hidden">Контакты</h2>
         <img class="footer-contacts-logo" src="" alt="device">
         <address class="footer-contacts-address">
-            <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-            <img src="" alt="Желтая полоса">
+        <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         </address>
+
         <nav class="navigation">
             <ul class="navigation-list navigation-user">
               <li class="navigation-item">
-                <a class="navigation-link" href="delivery.html">Доставка</a>
+                <a class="navigation-link" href="#">Доставка</a>
               </li>
               <li class="navigation-item">
-                <a class="navigation-link" href="warranty.html">Гарантия</a>
+                <a class="navigation-link" href="#">Гарантия</a>
               </li>
               <li class="navigation-item">
-                <a class="navigation-link" href="contacts.html">Контакты</a>
+                <a class="navigation-link" href="#">Контакты</a>
               </li>
             </ul>
         </nav>
+     
+      <section class="footer-phone">
+          <a class="footer-phone" href="tel:+7(812)812-12-12">Тел.:+7(812)812-12-12</a>
+      </section>
     </section>
-    <section class="footer-social">
+      
+      <section class="footer-social">
+    <img src="" alt="">
         <ul class="footer-social-list">
             <li class="footer-social-item">
                 <a class="button" href="#">
@@ -263,13 +270,9 @@
                 </a>
             </li>
         </ul>
-    </section>
-    <section class="footer-phone">
-        <a class="footer-phone" href="tel: +7 (812) 812-12-12">Тел.: +7 (812) 812-12-12</a>
-    </section>
-    <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
+        <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
+      </section>
+   
 </footer>
-
-
-    </body>
+</body>
 </html>
