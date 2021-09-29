@@ -10,7 +10,10 @@
             <img class="page-header-logo"  alt="Логотип device" src="">
       <ul class="navigation-list navigation-user">
         <li class="navigation-item">
-          <a class="navigation-link" href="#">Поиск по сайту</a>
+          <a class="navigation-link" href="#"></a>  
+      <form class="search" action="/" method="post">
+        <input class="search-input" type="text" placeholder="Поиск по сайту">
+      </form>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">Войти</a>
@@ -42,42 +45,33 @@
     </nav>
   </header>
   <main class="main-index">
-     <section class="gallery">
-      <h2 class="gallery-title">01</h2>
-        <img class="slider-image" src="" alt="Порхает как бабочка,жалит как пчела!">
-        <button class="slider-button slider-prev" type="button">
-              <span class="visually-hidden">Предыдущее фото</span>
-        </button>
-        <button class="slider-button slider-next" type="button">
-            <span class="visually-hidden">Следующее фото</span>
-        </button> 
-            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-            <p>800м дальность полета</p>
-            <p>50м радиус поражения </p>
-          <ol class="slider-pagination">
-              <li class="slider-pagination-item">
-        <button class="slider-pagination-button slider-pagination-button-current" type="button">
-             <span class="visually-hidden">1 фото</span>
-        </button>
-              </li>
-              <li class="slider-pagination-item">
-        <button class="slider-pagination-button slider-pagination-button-current" type="button">
-             <span class="visually-hidden">2 фото</span>
-        </button>
-              </li>
-              <li class="slider-pagination-item">
-        <button class="slider-pagination-button slider-pagination-button-current" type="button">
-             <span class="visually-hidden">3 фото</span>
-        </button>
-              </li>
-              </ol>             
-     </section>
-    
-      <ul class="navigation-list">
-        <li class="navigation-item">
-              <a class="navigation-link" href="#">Подробнее</a>
-        </li>
-      </ul>
+
+    <section class="gallery">
+      <div class="gallery-container">
+        <div class="gallery-slider">
+          <article class="gallery-slide slide">
+            <div class="slide-img">
+              <img src="" alt="">
+            </div> 
+            <div class="slide-info">
+              <div class="slide-number"></div>
+              <h2 class="slide-header">Порхает как бабочка, жалит как пчела!</h2>
+              <p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+              </p>
+              <a class="button button-all" href="#">Подробнее</a>
+              <a href="" class="slide-link"></a>
+              <table class="slide-specifications"></table>
+              <p>800м Дальность полета</p>
+              <p>50м Радиус порожения</p>
+            </div>
+          </div>
+          </article>
+      <div class="gallery-arrows"></div>
+        <ul class="gallery-pagination"></ul>
+      </div>
+      
+    </section>
+      
      
       <ul class="prodcut-list"> 
       <li class="product-card">
@@ -138,6 +132,10 @@
             <img src="" alt="illustration-delivery">
         </section>
 
+    <section> 
+        <img src="" alt="">
+        <a class="button" href='#'>Доставим редкий товар под заказ</a>
+    </section> 
         
     
     <section class="appointment-contacts">
