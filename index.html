@@ -11,14 +11,13 @@
     <nav class="navigation">
       <a class="page-header-logo">Логотип device</a>
         <ul class="navigation-list navigation-user">
+          
           <li class="navigation-item">
 
-            <form class="search" action="/" method="post">
-              <button type="submit" class="search-button">
-                <span class="visually-hidden">Поиск</span>
-              <input class="search-input" type="text" placeholder="Поиск по сайту">
-            </form>
-          </li>
+            <form class="form-search" action="" method="GET">
+              <input class="form-search-search" type="search" placeholder="Поиск по сайту">
+              <button class="form-search-submit" type="submit">Найти</button>
+            </form>  
 
           <li class="navigation-item">
             <a class="navigation-link" href="#">Войти</a>
@@ -50,6 +49,7 @@
       </ul>
     </nav>
   </header>
+
   <main class="main-index">
 
     <section class="gallery">
@@ -59,6 +59,7 @@
             <div class="slide-img">
               <img src="" alt="">
             </div>
+            
 
             <div class="slide-info"></div>
             <div class="slide-number">01</div>
@@ -86,29 +87,57 @@
           <span class="arrow-right"></span>
           <span class="arrow-left"></span>
         </div>
-
-        <ul class="gallery-pagination">
-          <li>
-            <input type="radio" id="slide1" name="slide" checked="">
-              <label for="slide1"></label>
-                <img src="" alt="">
-          </li>
-          <li>
-            <input type="radio" id="slide2" name="slide">
-              <label for="slide2"></label>
-                <img src="" alt="">
-          </li>
-          <li>
-            <input type="radio" id="slide3" name="slide">
-            <label for="slide3"></label>
-            <img src="" alt="">
-        </li>
-        </ul>
       </div>
 
+        <div class="gallery-pagination">
+          <button class="gallery-pagination-button" type="button"
+              aria-label="1"></button>
+            <button class="gallery-pagination-button" type="button" aria-label="2"></button>
+            <button class="gallery-pagination-button" type="button" aria-label="3"></button>
+        </div>
+    
+    <section class="page-main-services">
+      <h2 class="visually-hidden">Сервис</h2>
+
+      <div class="services content-wrapper">
+        <div class="services-controls services-controls">
+          <button class="services-controls-button services-controls-button-current" type="button">Доставка</button>
+          <button class="services-controls-button" type="button">Гарантия</button>
+          <button class="services-controls-button" type="button">Кредит</button>
+        </div>
+
+        <ul class="services-list">
+          <li class="services-list-item service services-list-item-current service-delivery">
+            <div class="service-content-wrapper">
+              <h3 class="service-title">Доставка</h3>
+
+              <p class="service-description">Мы с удовольствием доставим ваш товар прямо к вашему
+                подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            </div>
+          </li>
+          <li class="services-list-item service service-warranty">
+            <div class="service-content-wrapper">
+              <h3 class="service-title">Гарантия</h3>
+
+              <p class="service-description">Если из-за возгорания купленного у нас товара у вас сгорит дом —
+                не переживайте, мы выдадим вам новый.Товар, не дом, конечно же.</p>
+            </div>
+          </li>
+          <li class="services-list-item service service service-credit">
+            <div class="service-content-wrapper">
+              <h3 class="service-title">Кредит</h3>
+
+              <p class="service-description">Залезть в долговую яму стало проще! Кредитные консультанты
+                подберут для вас наиболее выгодные условия кредита.Выгодные для нашего банка, разумеется.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+      
     </section>
     
-    <section>
+
       <ul class="product-list">
         <li class="product-card">
           <a class="product-card-link" href="#">
@@ -153,45 +182,32 @@
         </li>
       </ul>
     </section>
-    
-
-    <section class="sliders">
-      <button class="slider-button" type="button">
-      <h2>Доставка</h2>
-      <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,
-        поднимая его на ваш этаж.</p>
-      <img src="" alt="illustration-delivery">
-      </button>
-
-      <button class="slider-button" type="button">
-        <span class="visually-hidden">Гарантия</span>
-      </button>
-      <button class="slider-button" type="button">
-        <span class="visually-hidden">Кредит</span>
-      </button>
-      
-    </section>
-
-    <section>
-
+  
       <a class="button" href='#'>Доставим редкий товар под заказ</a>
-    </section>
+    
+    <div class="appointment-contacts">
+      <section class="company">
+        <h2 class="appointment-title">О нас</h2>
 
+      <p class="appointemnt-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
 
-    <section class="appointment-contacts">
-      <h1 class="appointment-title">О нас</h1>
-      <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-      <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
-      <ul>
-        <li>Меловые линии</li>
-        <li>СДИК</li>
-        <li>ТоксБерри</li>
+      <p class="appointemnt-text">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+
+      <ul class="appointemnt-list">
+        <li class="appointemnt-list">Меловые линии</li>
+        <li class="appointemnt-list">СДИК</li>
+        <li class="appointemnt-list">ТоксБерри</li>
       </ul>
-      <a class="button" href="#">Подробнее о нас</a>
 
-      <p class="contacts-title">Контакты</p>
+      <a class="button" href="#">Подробнее о нас</a>
+      </section>
+
+      <section class="contacts">
+        <h2 class="contacts-title">Контакты</h2>
+
       <p>Вы можете забрать товар сами, заехав в наш офис.
-        Заодно, сможете проверить работоспособность покупки. </p>
+        Заодно, сможете проверить работоспособность покупки.</p>
+
       <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
       <address class="contacts-address">
         <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
@@ -203,7 +219,8 @@
         <li class="contacts-schedule-item">сб-вс: с 10:00 до 19:00</li>
       </ul>
       <a class="button" href="#">Напишите нам</a>
-    </section>
+      </section>
+    </div>
 
 
     <section class="appointemnt">
