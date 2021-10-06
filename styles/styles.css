@@ -1,0 +1,82 @@
+@font-face {
+    font-family: "raleway";
+    font-style: normal;
+    font-weight: 800;
+    src: url("fonts/raleway-800.woff2") format("woff2");
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: "rubik";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/rubik-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: "rubik";
+    font-style: normal;
+    font-weight: 600;
+    src: url("fonts/rubik-600.woff2") format("woff2");
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: "rubik";
+    font-style: normal;
+    font-weight: 800;
+    src: url("fonts/rubik-800.woff2") format("woff2");
+    font-display: swap;
+}
+
+
+body {
+    font-family: "rubik";
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    background-color: #FFFFFF;
+
+}
+
+
+
+.page-header {
+    color: #000000;
+    background: #FFE17F;
+}
+
+.page-header-logo {
+    color: black;
+    background-color: white ;
+    
+}
+
+
+
+
+.navigation-link {
+    font-family: "rubik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    background-color: #FFE17F;
+    text-decoration: none;
+    
+
+
+}
+
+
+
+
+
+
+
+
