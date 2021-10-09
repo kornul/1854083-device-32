@@ -10,10 +10,10 @@
 <body>
   <header class="page-header">
     <nav class="navigation">
-      <img src="images/device.svg" width="145" height="35" alt="Девайс">
+      <img src="images/device.svg" width="145" height="35"  alt="Девайс">
       <ul class="navigation-list ">
 
-        <li class="navigation-item">
+        <li class="user-menu">
 
           <form class="form-search" action="" method="GET">
             <input class="form-search-search" type="search" placeholder="Поиск по сайту">
@@ -21,13 +21,13 @@
           </form>
 
         <li class="navigation-item">
-          <a class="navigation-link" href="#">Войти</a>
+          <a class="user-menu" href="#">Войти</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">Сравнить</a>
+          <a class="user-menu" href="#">Сравнить</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">Корзина</a>
+          <a class="user-menu" href="#">Корзина</a>
         </li>
       </ul>
 
@@ -58,7 +58,7 @@
         <div class="gallery-slider">
           <article class="gallery-slide slide">
             <div class="slide-img">
-              <img src="images/slider-1 (1).jpg" width="560" height="560" alt="квадрокоптер">
+              <img class="slide-img" src="images/slider-1.jpg" width="560" height="560" top="190" left="140" alt="квадрокоптер">
             </div>
 
 
@@ -67,7 +67,7 @@
             <h2 class="slide-header">Порхает как бабочка, жалит как пчела!</h2>
             <p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
               замаскированным под стандартную камеру.</p>
-            <a class="button button-all" href="#">Подробнее</a>
+            <a class="button-detailed" href="#">Подробнее</a>
 
             <table class="slide-specifications">
               <tr>
@@ -85,8 +85,8 @@
         </div>
 
         <div class="gallery-arrows">
-          <button class="gallery-arrows arrow-right">Следующее фото</button>
-          <button class="gallery-arrows arrow-left">Предыдущее фото</button>
+          <button class="gallery-arrow arrow-left"><span class="visually-hidden">Предыдущее фото</span></button>
+          <button class="gallery-arrow arrow-right"><span class="visually-hidden">Следующее фото</span></button>
         </div>
         <div class="gallery-pagination">
           <button class="gallery-pagination-button" type="button" aria-label="1"></button>
@@ -143,12 +143,13 @@
       </ul>
     </section>
 
+
     <section class="page-main-services">
       <h2 class="visually-hidden">Сервис</h2>
 
-      <div class="services content-wrapper">
+      <div class="services-content-wrapper">
         <div class="services-controls services-controls">
-          <button class="services-controls-button services-controls-button-current" type="button">Доставка</button>
+          <button class="services-controls-button services-controls-current" type="button">Доставка</button>
           <button class="services-controls-button" type="button">Гарантия</button>
           <button class="services-controls-button" type="button">Кредит</button>
         </div>
@@ -180,10 +181,12 @@
           </li>
         </ul>
       </div>
+      
 
       <section class="delivery">
-        <a class="button" href='#'>Доставим редкий товар под заказ</a>
+        <a class="button-delivery" href="#">Доставим редкий товар под заказ</a>
       </section>
+  
 
       <div class="appointment-contacts">
         <section class="company">
@@ -201,13 +204,13 @@
             <li class="appointment-list">ТоксБерри</li>
           </ul>
 
-          <a class="button" href="#">Подробнее о нас</a>
+          <a class="button-info" href="#">Подробнее о нас</a>
         </section>
 
         <section class="contacts">
           <h2 class="contacts-title">Контакты</h2>
 
-          <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, сможете проверить работоспособность покупки.</p>
+          <p class="contact-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, сможете проверить работоспособность покупки.</p>
 
           <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
           <address class="contacts-address">
@@ -219,15 +222,15 @@
             <li class="contacts-schedule-item">пн-пт: с 10:00 до 22:00</li>
             <li class="contacts-schedule-item">сб-вс: с 10:00 до 19:00</li>
           </ul>
-          <a class="button" href="#">Напишите нам</a>
+          <a class="button-write" href="#">Напишите нам</a>
         </section>
       </div>
 
-
+      
       <div class="appointment">
         <div class="appointment-text">
           <p>Подпишитесь на рассылку</p>
-          <p>Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции,
+          <p class="description-text">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции,
             спецпредложения и вот это вот всё.</p>
         </div>
 
@@ -236,7 +239,7 @@
         <div class="appointment-mail">
           <form сlass="appointment" action="">
             <input type="text" id="appointment-mail" name="appointment-mail" placeholder="Ваш E-mail">
-            <button class="button" type="submit">Подписаться</button>
+            <button class="button-appointment" type="submit">Подписаться</button>
           </form>
           <p>Это бесплатно</p>
 
@@ -247,7 +250,7 @@
   <footer class="page-footer">
     <section class="footer-contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <img class="footer-contacts-logo" src="" alt="device">
+      <img class="footer-contacts-logo" src="images/Group.svg" alt="device">
       <address class="footer-contacts-address">
         <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
       </address>
@@ -265,9 +268,8 @@
           </li>
         </ul>
       </nav>
-
-
       <a class="footer-phone" href="tel:+7(812)812-12-12">Тел.:+7(812)812-12-12</a>
+
     </section>
 
     <section class="footer-social">
@@ -284,3 +286,15 @@
           </a>
         </li>
         <li class="footer-social-item">
+          <a class="button" href="#">
+            <span class="visually-hidden">Твиттер</span>
+          </a>
+        </li>
+      </ul>
+      <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
+    </section>
+
+  </footer>
+</body>
+
+</html>
