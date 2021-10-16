@@ -23,7 +23,7 @@
           </form>
 
         <li class="navigation-item">
-          <a class="user-menu" href="#">Войти</a>
+          <a class="user-menu" href="#">Коля Петухов</a>
         </li>
         <li class="navigation-item">
           <a class="user-menu" href="#">Сравнить</a>
@@ -74,8 +74,8 @@
 
 
 
-    <section class="catalog-products">
-      <h1 class="visually-hidden">Фильтр</h1>
+    <section class="catalog-filters">
+      <h1 class="catalog-filter-heading">Фильтр:</h1>
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Стоимость</legend>
@@ -154,25 +154,30 @@
               </label>
             </li>
           </ul>
-        </fieldset>
-        <button class="button" type="submit">Показать</button>
+          <button class="form-catalog-button button" type="submit">Показать</button>
 
+        </fieldset>
       </form>
-      <form class="sorting-type">
-        <label class="visually-hidden" for="sorting">Сортировка</label>
-        <select class="select-control" id="sorting" name="sorting">
-          <option value="popular">Сначала популярное</option>
-          <option value="cheap">Сначала дешёвое</option>
-          <option value="expensive">Сначала дорогое</option>
-        </select>
-        <button class="visually-hidden" type="submit">Отсортировать продукт</button>
-      </form>
-      <a href="#" class="button button-light">
-        <span class="visually-hidden">Вверх списка</span>
-      </a>
-      <a href="#" class="button">
-        <span class="visually-hidden">Вниз списка</span>
-      </a>
+    </section>
+
+    <div class="catalog">
+      <section class="sorting">
+        <form class="sorting-type">
+          <h2 class="sorting-heading">Сортировка:</h2>
+          <select class="select-control" id="sorting" name="sorting">
+            <option value="popular">Сначала популярное</option>
+            <option value="cheap">Сначала дешёвое</option>
+            <option value="expensive">Сначала дорогое</option>
+          </select>
+          <button class="visually-hidden" type="submit">Отсортировать продукт</button>
+        </form>
+        <a href="#" class="button button-light">
+          <span class="visually-hidden">Вверх списка</span>
+        </a>
+        <a href="#" class="button">
+          <span class="visually-hidden">Вниз списка</span>
+        </a>
+      </section>
 
       <ul class="catalog-list">
         <li class="catalog-list-item card-product">
@@ -211,32 +216,25 @@
       </ul>
 
       <button class="button pagination-show-more" type="button">Загрузить еще</button>
-      <ul class="pagination">
-        <li class="pagination-item">
-          <a class="pagination-link pagination-prev pagination-disabled">Назад</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link pagination-current">1</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">2</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">3</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">...</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">15</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link pagination-next" href="#">
-            <span class="visually-hidden">Вперед</span>
-          </a>
-        </li>
-      </ul>
-    </section>
+      <div class="pagination">
+        <a class="pagination-button">Назад</a>
+
+        <ul class="pagination-list">
+          <li class="pagination-list-item">
+            <a class="pagination-link pagination-link-current">1</a>
+          </li>
+          <li class="pagination-list-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination-list-item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination-list-item">
+            <a class="pagination-link" href="#">15</a>
+          </li>
+        </ul>
+        <a class="pagination-button" href="#">Вперёд</a>
+      </div>
   </main>
 
   <footer class="page-footer">

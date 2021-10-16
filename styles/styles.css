@@ -453,6 +453,8 @@ body {
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 
@@ -486,9 +488,169 @@ body {
 
 
 .htmlacademy-link {
-    
+    /* тут доконца не понял как сделать. В html нужна картинка? */
     background-image: url("../images/htmlacademy.svg");
     background-repeat: no-repeat;
     text-decoration: none;
 
+}
+
+
+.page-main-title {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+    color: #000000;
+}
+
+
+.breadcrumbs {
+    width: 425px;
+}       
+
+
+.breadcrumbs-link {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    text-decoration: none;
+}
+
+
+.catalog-filters {
+    width: 468px;
+    background-color: #E5E5E5;
+}
+
+
+.catalog-filter-heading {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    background-color: #DCDCDC;
+    text-transform: uppercase;
+}
+
+
+.catalog-filter-title {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
+}
+
+
+.control-label {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+
+.form-catalog-button {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #000000;
+    background-color:#FFC700;
+}
+
+/* тут я запутался как сделать и с кодом в html какая та беда */
+.sorting-heading { 
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.2em;
+    color: #000000;
+    background-color: #EBEBEB;
+    text-transform: uppercase;
+}
+
+
+.select-control {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    
+}
+
+
+.catalog-list {
+    width: 760px;
+}
+
+
+.card-product-text {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+
+.card-product-price {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+
+.pagination-show-more {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+
+.pagination {
+    width: 760px;
+    background-color: #EBEBEB;
+}
+
+
+.pagination-button {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    text-transform: uppercase;
+    
+}
+
+
+.pagination-link {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    text-decoration: none;
 }
