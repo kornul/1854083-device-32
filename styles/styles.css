@@ -57,7 +57,7 @@ body {
 
 
 .form-search-search {
-    font-family: "Rubik";
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -71,7 +71,7 @@ body {
 
 
 .user-menu {
-    font-family: "Rubik";
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -104,7 +104,7 @@ body {
 
 
 .slide-number { 
-    font-family: "Rubik";
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 180px;
@@ -124,7 +124,7 @@ body {
 
 
 .slide-description {
-    font-family: "Rubik";
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -141,11 +141,12 @@ body {
     text-decoration: none;
     color: #000000;
     background-color: #FFE17F;
+    text-transform: uppercase;
 }
 
 
 .slide-specifications td {
-    font-family: "Rubik";
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
@@ -154,7 +155,7 @@ body {
 
 
 .slide-specifications th {
-    font-family: "Rubik";
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -222,6 +223,7 @@ body {
     line-height: 21px;
     color: #000000;
     background-color: #FFC700;
+    text-transform: uppercase;
 }
 
 
@@ -236,7 +238,7 @@ body {
 
 
 .service-description {
-    font-family: "Rubik";
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -259,6 +261,7 @@ body {
     line-height: 23px;
     color: #000000;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 
@@ -274,11 +277,12 @@ body {
     font-size: 50px;
     line-height: 50px;
     color:#000000;
+    
 }
 
 
 .appointment-text-info {
-    font-family: "Rubik";
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -288,7 +292,7 @@ body {
 
 
 .appointment-list {
-    font-family: "Rubik";
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -306,6 +310,7 @@ body {
     color: #000000;
     background-color: #FFE17F;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 
@@ -325,7 +330,7 @@ body {
 
 
 .contact-text {
-    font-family: "Rubik";
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -335,7 +340,7 @@ body {
 
 
 .contacts-subtitle {
-    font-family: "Rubik";
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -345,7 +350,7 @@ body {
 
 
 .contacts-address-text {
-    font-family: "Rubik";
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -355,7 +360,7 @@ body {
 
 
 .contacts-phone {
-    font-family: "Rubik";
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -365,7 +370,7 @@ body {
 
 
 .contacts-schedule {
-    font-family: "Rubik";
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -383,6 +388,7 @@ body {
     color: #000000;
     background-color: #FFE17F;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 
@@ -403,7 +409,7 @@ body {
 
 
 .description-text {
-    font-family: "Rubik";
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -413,7 +419,7 @@ body {
 
 
 .appointment-mail {
-    font-family: "Rubik";
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -429,11 +435,12 @@ body {
     font-size: 18px;
     line-height: 21px;
     color: #000000;
+    text-transform: uppercase;
 }
 
 
 .text-info {
-    font-family: "Rubik";
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -449,7 +456,7 @@ body {
 
 
 .about-text {
-    font-family: "Rubik";
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -472,7 +479,7 @@ body {
 
 
 .footer-phone {
-    font-family: "Rubik";
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -511,7 +518,7 @@ body {
 
 
 .breadcrumbs-link {
-    font-family: "Rubik";
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -539,7 +546,7 @@ body {
 
 
 .catalog-filter-title {
-    font-family: "Rubik";
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -549,7 +556,7 @@ body {
 
 
 .control-label {
-    font-family: "Rubik";
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -583,7 +590,7 @@ body {
 
 
 .select-control {
-    font-family: "Rubik";
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -599,7 +606,7 @@ body {
 
 
 .card-product-text {
-    font-family: "Rubik";
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -608,7 +615,7 @@ body {
 
 
 .card-product-price {
-    font-family: "Rubik";
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -645,7 +652,7 @@ body {
 
 
 .pagination-link {
-    font-family: "Rubik";
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
