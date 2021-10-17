@@ -35,7 +35,7 @@
 
 
 body {
-    font-family: "Rubik";
+    font-family: "Rubik", sans-serif;
     font-size: 16px;
     line-height: 19px;
     background-color: #FFFFFF;
@@ -87,13 +87,14 @@ body {
 
 
 .navigation-link {
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
     line-height: 21px;
     color: #000000;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 
@@ -114,7 +115,7 @@ body {
 
 
 .slide-header {
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 50px;
@@ -132,7 +133,7 @@ body {
 
 
 .button-detailed {
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -185,7 +186,7 @@ body {
 
 
 .product-card-link {
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -214,7 +215,7 @@ body {
 
 
 .services-controls-button {
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -225,7 +226,7 @@ body {
 
 
 .service-title {
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 50px;
@@ -251,7 +252,7 @@ body {
 
 
 .button-delivery {
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 20px;
@@ -267,7 +268,7 @@ body {
 
 
 .appointment-title {
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 50px;
@@ -297,7 +298,7 @@ body {
 
 
 .button-info {
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -314,7 +315,7 @@ body {
 
 
 .contacts-title {
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 50px;
@@ -374,7 +375,7 @@ body {
 
 
 .button-write {
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -392,7 +393,7 @@ body {
 
 
 .appointment-text {
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 50px;
@@ -422,7 +423,7 @@ body {
 
 
 .button-appointment {
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -459,13 +460,14 @@ body {
 
 
 .footer-navigation-link {
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
     line-height: 21px;
     color: #FFFFFF;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 
@@ -487,17 +489,14 @@ body {
 }
 
 
-.htmlacademy-link {
-    /* тут доконца не понял как сделать. В html нужна картинка? */
-    background-image: url("../images/htmlacademy.svg");
-    background-repeat: no-repeat;
-    text-decoration: none;
+.footer-info-image {
+    
 
 }
 
 
 .page-main-title {
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 50px;
@@ -529,7 +528,7 @@ body {
 
 
 .catalog-filter-heading {
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 16px;
@@ -559,7 +558,7 @@ body {
 
 
 .form-catalog-button {
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -569,9 +568,9 @@ body {
     background-color:#FFC700;
 }
 
-/* тут я запутался как сделать и с кодом в html какая та беда */
+
 .sorting-heading { 
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 16px;
@@ -618,7 +617,7 @@ body {
 
 
 .pagination-show-more {
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 16px;
@@ -634,7 +633,7 @@ body {
 
 
 .pagination-button {
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 16px;
