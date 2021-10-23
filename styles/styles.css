@@ -6,7 +6,6 @@
     font-display: swap;
 }
 
-
 @font-face {
     font-family: "Rubik";
     font-style: normal;
@@ -14,7 +13,6 @@
     src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
     font-display: swap;
 }
-
 
 @font-face {
     font-family: "Rubik";
@@ -24,7 +22,6 @@
     font-display: swap;
 }
 
-
 @font-face {
     font-family: "Rubik";
     font-style: normal;
@@ -33,42 +30,50 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
 
 body {
+    height: 100%;
+    margin: 0;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
     font-family: "Rubik", sans-serif;
     font-size: 16px;
     line-height: 19px;
     background-color: #FFFFFF;
 }
 
-
 .visually-hidden {
-    position: absolute; 
-    overflow: hidden; 
-    clip: rect(0 0 0 0); 
-    height: 1px; width: 1px; 
-    margin: -1px; padding: 0; border: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
 } 
 
-
 .page-header {
-    background-color: #FFE17F;
+    background-color: #FFE17F;  
 }
 
+.top-navigation {
+    display: flex;  
+}
 
 .form-search-search {
+    margin-right: 385px;
+    margin-left: 96px;
     font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
 }
-
-
-.navigation-item {
-    Width : 1075px;
-}
-
 
 .user-menu {
     font-family: "Rubik", sans-serif;
@@ -80,11 +85,44 @@ body {
     text-decoration: none;
 }
 
-
-.navigation-list {
-    width: 1041px;
+.top-navigation-item-enter {
+    margin-right: 187px;
+    margin-left: auto;
 }
 
+.top-navigation-item-compare {
+    margin-right: 40px;
+}
+
+.top-navigation-cart {
+    margin-right: 55px;
+}
+
+.navigation-list {
+    display: flex;
+}
+
+.navigation-link-current {
+    margin-left: 60px;
+    margin-right: 20px;
+}
+
+.button-all-link {
+    margin-left: 20px;
+    margin-right: 247px;
+}
+
+.navigation-link-delivery {
+    margin-right: 34px;
+}
+
+.navigation-link-warranty {
+    margin-right: 93px;
+}
+
+.navigation-link-contacts {
+    margin-right: 59px;
+}
 
 .navigation-link {
     font-family: "Raleway", sans-serif;
@@ -97,11 +135,13 @@ body {
     text-transform: uppercase;
 }
 
-
-.main-index {
-    width: 1160px;
+.main-container {
+    flex-grow: 1;
 }
 
+.gallery {
+    display: flex;
+}
 
 .slide-number { 
     font-family: "Rubik", sans-serif;
@@ -113,7 +153,6 @@ body {
     background-color: #FFE17F;
 }
 
-
 .slide-header {
     font-family: "Raleway", sans-serif;
     font-style: normal;
@@ -122,6 +161,9 @@ body {
     line-height: 50px;
 }
 
+.slide-header-text {
+    margin-left: 740px; 
+}
 
 .slide-description {
     font-family: "Rubik", sans-serif;
@@ -130,7 +172,6 @@ body {
     font-size: 18px;
     line-height: 30px;
 }
-
 
 .button-detailed {
     font-family: "Raleway", sans-serif;
@@ -144,7 +185,6 @@ body {
     text-transform: uppercase;
 }
 
-
 .slide-specifications td {
     font-family: "Rubik", sans-serif;
     font-style: normal;
@@ -153,7 +193,6 @@ body {
     line-height: 30px;
 }
 
-
 .slide-specifications th {
     font-family: "Rubik", sans-serif;
     font-style: normal;
@@ -161,7 +200,6 @@ body {
     font-size: 16px;
     line-height: 30px;
 }
-
 
 .gallery-arrow {
     width: 40px;
@@ -172,7 +210,6 @@ body {
     border: none;
 }
 
-
 .arrow-left {
     background-image:   url("../images/left.svg");
 }
@@ -180,11 +217,40 @@ body {
     background-image:   url("../images/right.svg");
 }
 
-
 .product-list {
+    display: flex;
     width: 1160px;
+    
 }
 
+.product-card-vr {
+    margin-right: 40px;
+    margin-left: 140px;
+}
+
+.product-card-selfi {
+    margin-right: 40px;
+}
+
+.product-card-cam {
+    margin-right: 40px;
+}
+
+.product-card-fit {
+    margin-right: 40px;
+}   
+
+.product-card-watch {
+    margin-right: 40px;
+}
+
+.product-card-copter {
+    margin-right: 140px;
+}
+
+.product-card-image {
+    background-color:#FFE17F;
+}
 
 .product-card-link {
     font-family: "Raleway", sans-serif;
@@ -196,24 +262,18 @@ body {
     text-decoration: none;
 }
 
-
-.product-card-image {
-    background: url("../images/Rectangle-8.svg");
-    background-color: #FFE17F;
-}
-
-
 .page-main-services {
     width: 1440px;
     background-color:  #F0F0F0;
 }
 
-
 .services-content-wrapper {
-    background: url("../images/delivery.svg") no-repeat right,
-               
+    display: flex;              
 }
 
+.services-controls-current {
+
+}
 
 .services-controls-button {
     font-family: "Raleway", sans-serif;
@@ -226,7 +286,6 @@ body {
     text-transform: uppercase;
 }
 
-
 .service-title {
     font-family: "Raleway", sans-serif;
     font-style: normal;
@@ -235,7 +294,6 @@ body {
     line-height: 50px;
     color: #000000;
 }
-
 
 .service-description {
     font-family: "Rubik", sans-serif;
@@ -246,12 +304,11 @@ body {
     color: #444444;
 }
 
-
 .delivery {
+    display: flex;
     width: 1160px;
     background-color: #F0F0F0;   
 }
-
 
 .button-delivery {
     font-family: "Raleway", sans-serif;
@@ -264,11 +321,22 @@ body {
     text-transform: uppercase;
 }
 
-
 .appointment-contacts {
-    width: 560px;
+    display: flex;
+    width: 1440px;
 }
 
+.company-info {
+    width: 560px;
+    margin-right: 40px;
+    margin-left: 140px;
+}
+
+.contacts-info {
+    width: 560px;
+    margin-right: 140px;
+    margin-left: 40px;
+}
 
 .appointment-title {
     font-family: "Raleway", sans-serif;
@@ -277,9 +345,7 @@ body {
     font-size: 50px;
     line-height: 50px;
     color:#000000;
-    
 }
-
 
 .appointment-text-info {
     font-family: "Rubik", sans-serif;
@@ -290,7 +356,6 @@ body {
     color:#444444;
 }
 
-
 .appointment-list {
     font-family: "Rubik", sans-serif;
     font-style: normal;
@@ -299,7 +364,6 @@ body {
     line-height: 20px;
     color: #000000;
 }
-
 
 .button-info {
     font-family: "Raleway", sans-serif;
@@ -313,11 +377,9 @@ body {
     text-transform: uppercase;
 }
 
-
 .contacts {
     width: 560px;
 }
-
 
 .contacts-title {
     font-family: "Raleway", sans-serif;
@@ -328,7 +390,6 @@ body {
     color: #000000;
 }
 
-
 .contact-text {
     font-family: "Rubik", sans-serif;
     font-style: normal;
@@ -337,7 +398,6 @@ body {
     line-height: 30px;
     color: #444444;
 }
-
 
 .contacts-subtitle {
     font-family: "Rubik", sans-serif;
@@ -348,7 +408,6 @@ body {
     color: #444444;
 }
 
-
 .contacts-address-text {
     font-family: "Rubik", sans-serif;
     font-style: normal;
@@ -357,7 +416,6 @@ body {
     line-height: 30px;
     color: #444444;
 }
-
 
 .contacts-phone {
     font-family: "Rubik", sans-serif;
@@ -368,7 +426,6 @@ body {
     color: #444444;
 }
 
-
 .contacts-schedule {
     font-family: "Rubik", sans-serif;
     font-style: normal;
@@ -377,7 +434,6 @@ body {
     line-height: 30px;
     color: #444444;
 }
-
 
 .button-write {
     font-family: "Raleway", sans-serif;
@@ -391,14 +447,20 @@ body {
     text-transform: uppercase;
 }
 
-
-.appointment {
+.subscribe {
+    display: flex;
     width: 1440px;
     background-color: #F0F0F0;
 }
+.subscribe-text-info {
+    
+}
 
+.description-text-info {
 
-.appointment-text {
+}
+
+.subscribe-text {
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -406,7 +468,6 @@ body {
     line-height: 50px;
     color: #000000;
 }
-
 
 .description-text {
     font-family: "Rubik", sans-serif;
@@ -417,7 +478,6 @@ body {
     color: #444444;
 }
 
-
 .appointment-mail {
     font-family: "Rubik", sans-serif;
     font-style: normal;
@@ -426,7 +486,6 @@ body {
     line-height: 30px;
     color: #444444;
 }
-
 
 .button-appointment {
     font-family: "Raleway", sans-serif;
@@ -438,7 +497,6 @@ body {
     text-transform: uppercase;
 }
 
-
 .text-info {
     font-family: "Rubik", sans-serif;
     font-style: normal;
@@ -449,11 +507,16 @@ body {
 }
 
 
+
 .page-footer {
-    width: 1440px;
     background-color: #444444;
 }
 
+.page-footer-container {
+    display: flex;
+    width: 1440px;
+    margin: 0 auto;
+}
 
 .about-text {
     font-family: "Rubik", sans-serif;
@@ -464,7 +527,6 @@ body {
     color: #FFFFFF;
     text-decoration: none;
 }
-
 
 .footer-navigation-link {
     font-family: "Raleway", sans-serif;
@@ -477,7 +539,6 @@ body {
     text-transform: uppercase;
 }
 
-
 .footer-phone {
     font-family: "Rubik", sans-serif;
     font-style: normal;
@@ -488,19 +549,11 @@ body {
     text-decoration: none;
 }
 
-
 .footer-social-item {
     background: url("../images/facebook.svg") no-repeat, center,
                 url("../images/insta.svg") no-repeat, center,
                 url("../images/twiter.svg") no-repeat, center;
 }
-
-
-.footer-info-image {
-    
-
-}
-
 
 .page-main-title {
     font-family: "Raleway", sans-serif;
@@ -511,11 +564,9 @@ body {
     color: #000000;
 }
 
-
 .breadcrumbs {
     width: 425px;
 }       
-
 
 .breadcrumbs-link {
     font-family: "Rubik", sans-serif;
@@ -527,12 +578,10 @@ body {
     text-decoration: none;
 }
 
-
 .catalog-filters {
     width: 468px;
     background-color: #E5E5E5;
 }
-
 
 .catalog-filter-heading {
     font-family: "Raleway", sans-serif;
@@ -544,7 +593,6 @@ body {
     text-transform: uppercase;
 }
 
-
 .catalog-filter-title {
     font-family: "Rubik", sans-serif;
     font-style: normal;
@@ -554,7 +602,6 @@ body {
     color: #000000;
 }
 
-
 .control-label {
     font-family: "Rubik", sans-serif;
     font-style: normal;
@@ -562,7 +609,6 @@ body {
     font-size: 16px;
     line-height: 19px;
 }
-
 
 .form-catalog-button {
     font-family: "Raleway", sans-serif;
@@ -574,7 +620,6 @@ body {
     color: #000000;
     background-color:#FFC700;
 }
-
 
 .sorting-heading { 
     font-family: "Raleway", sans-serif;
@@ -588,7 +633,6 @@ body {
     text-transform: uppercase;
 }
 
-
 .select-control {
     font-family: "Rubik", sans-serif;
     font-style: normal;
@@ -599,11 +643,9 @@ body {
     
 }
 
-
 .catalog-list {
     width: 760px;
 }
-
 
 .card-product-text {
     font-family: "Rubik", sans-serif;
