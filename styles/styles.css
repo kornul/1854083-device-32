@@ -510,12 +510,37 @@ body {
 
 .page-footer {
     background-color: #444444;
+    
 }
 
-.page-footer-container {
+.footer-contacts-user-panel {
     display: flex;
-    width: 1440px;
-    margin: 0 auto;
+    
+}
+
+.footer-contacts-logo {
+    
+}
+
+.about-text-contacts {
+   
+}
+
+.footer-navigation-link-delivery {
+    margin-right: 32px;
+}
+
+.footer-navigation-link-warranty {
+    margin-right: 32px;
+}
+
+.footer-navigation-link-contacts {
+    margin-right: 187px;
+}
+
+.footer-phone-info {
+    margin-left: 187px;
+    margin-right: 140px;
 }
 
 .about-text {
