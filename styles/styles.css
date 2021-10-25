@@ -65,6 +65,10 @@ body {
     display: flex;  
 }
 
+.top-navigation-item-text {
+    margin-right: 385px;
+}
+
 .form-search-search {
     margin-right: 385px;
     margin-left: 96px;
@@ -580,6 +584,24 @@ body {
                 url("../images/twiter.svg") no-repeat, center;
 }
 
+.user-menu-name {
+    margin-right: 29px;
+    margin-left: 410px;
+}
+
+.user-menu-exit {
+    margin-right: 51px;
+}
+
+.user-menu-compare {
+    margin-right: 40px;
+}
+
+.user-menu-basket {
+    margin-right: 60px;
+}
+
+
 .page-main-title {
     font-family: "Raleway", sans-serif;
     font-style: normal;
@@ -587,6 +609,22 @@ body {
     font-size: 50px;
     line-height: 50px;
     color: #000000;
+}
+.breadcrumbs-text {
+    display: flex;
+    width: 425px;
+}
+
+.breadcrumbs-link-main {
+    margin-right: 36px;
+}
+
+.breadcrumbs-link-catalog {
+    margin-right: 34px;
+}
+
+.breadcrumbs-link-selfi {
+    margin-right: 815px;
 }
 
 .breadcrumbs {
@@ -603,8 +641,13 @@ body {
     text-decoration: none;
 }
 
+.catalog-filters-page {
+    display: flex;
+}
+
 .catalog-filters {
     width: 468px;
+    margin-right: 68px;
     background-color: #E5E5E5;
 }
 
@@ -668,7 +711,7 @@ body {
     
 }
 
-.catalog-list {
+.catalog-right-column {
     width: 760px;
 }
 
