@@ -584,21 +584,12 @@ body {
                 url("../images/twiter.svg") no-repeat, center;
 }
 
-.user-menu-name {
+.navigation-item-name {
     margin-right: 29px;
-    margin-left: 410px;
 }
 
-.user-menu-exit {
+.top-navigation-item-exit {
     margin-right: 51px;
-}
-
-.user-menu-compare {
-    margin-right: 40px;
-}
-
-.user-menu-basket {
-    margin-right: 60px;
 }
 
 
@@ -707,12 +698,33 @@ body {
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
-    color: #000000;
-    
+    color: #000000; 
 }
 
 .catalog-right-column {
     width: 760px;
+}
+
+.catalog-list-product {
+    display: flex;
+    flex-wrap: wrap;
+    width: 852px;
+}
+
+.card-product-amateur {
+    margin-right: 40px;
+}
+
+.card-product-professional {   
+    margin-right: auto;
+}
+
+.card-product-unsinkable {
+    margin-right: 40px;
+}
+
+.card-product-follow {
+    margin-right: auto;
 }
 
 .card-product-text {
@@ -723,7 +735,6 @@ body {
     line-height: 24px;
 }
 
-
 .card-product-price {
     font-family: "Rubik", sans-serif;
     font-style: normal;
@@ -732,7 +743,6 @@ body {
     line-height: 21px;
 }
 
-
 .pagination-show-more {
     font-family: "Raleway", sans-serif;
     font-style: normal;
@@ -740,14 +750,38 @@ body {
     font-size: 16px;
     line-height: 19px;
     text-transform: uppercase;
+    color: #000000;
+    background-color: #E5E5E5;
 }
 
-
 .pagination {
+    display: flex;
     width: 760px;
     background-color: #EBEBEB;
 }
 
+.pagination-button-prev {
+    margin-top: 26px;
+    margin-right: 220px;
+    margin-bottom: 25px;
+    margin-left: 29px;
+}
+
+.pagination-button-next {
+    margin-top: 26px;
+    margin-right: 30px;
+    margin-bottom: 25px;
+    margin-left: 162px;
+}
+
+.pagination-list-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
 
 .pagination-button {
     font-family: "Raleway", sans-serif;
@@ -756,10 +790,9 @@ body {
     font-size: 16px;
     line-height: 19px;
     color: #000000;
+    text-decoration: none;
     text-transform: uppercase;
-    
 }
-
 
 .pagination-link {
     font-family: "Rubik", sans-serif;

@@ -13,26 +13,26 @@
       <a class="device-logo" href="#">
         <img src="images/logoblack.svg" width="145" height="35" alt="Лого">
       </a>
-      <ul class="navigation-list ">
 
-        <li class="user-menu">
+      <ul class="top-navigation">
 
+        <li class="top-navigation-item top-navigation-item-text">
           <form class="form-search" action="" method="GET">
-            <input class="form-search-search" type="search" placeholder="Поиск по сайту">
+            <input class="form-search-search " type="search" placeholder="Поиск по сайту">
             <button class="form-search-submit" type="submit">Найти</button>
           </form>
-
-        <li class="navigation-item">
-          <a class="user-menu user-menu-name" href="#">Коля Петухов</a>
         </li>
-        <li class="navigation-item">
+        <li class="navigation-item navigation-item-name">
+          <a class="user-menu" href="#">Коля Петухов</a>
+        </li>
+        <li class="top-navigation-item top-navigation-item-exit">
           <a class="user-menu user-menu-exit" href="#">Выход</a>
         </li>
-        <li class="navigation-item">
-          <a class="user-menu user-menu-compare" href="#">Сравнить</a>
+        <li class="top-navigation-item top-navigation-item-compare">
+          <a class="user-menu" href="#">Сравнить</a>
         </li>
-        <li class="navigation-item">
-          <a class="user-menu user-menu-basket" href="#">Корзина</a>
+        <li class="top-navigation-item top-navigation-cart">
+          <a class="user-menu" href="#">Корзина</a>
         </li>
       </ul>
 
@@ -183,8 +183,8 @@
         </section>
 
         <div class="catalog-right-column">
-          <ul class="catalog-list">
-            <li class="catalog-list-item card-product">
+          <ul class="catalog-list catalog-list-product">
+            <li class="catalog-list-item card-product-amateur">
               <a class="card-product-link" href="Подробнее">
                 <img class="car-product-image" src="images/productone.jpg" width="360" height="380px"
                   alt="Любительская селфи-палка"></a>
@@ -193,7 +193,7 @@
             </li>
 
 
-            <li class="catalog-list-item card-product">
+            <li class="catalog-list-item card-product-professional">
               <a class="card-product-link" href="#">
                 <img class="car-product-image" src="images/producttwo.jpg" width="360" height="380px"
                   alt="Любительская селфи-палка"></a>
@@ -201,7 +201,7 @@
               <p class="card-product-price">1 500 ₽.</p>
             </li>
 
-            <li class="catalog-list-item card-product">
+            <li class="catalog-list-item card-product-unsinkable">
               <a class="card-product-link" href="#">
                 <img class="car-product-image" src="images/producttree.jpg" width="360" height="380px"
                   alt="Любительская селфи-палка"></a>
@@ -210,7 +210,7 @@
             </li>
 
 
-            <li class="catalog-list-item card-product">
+            <li class="catalog-list-item card-product-follow">
               <a class="card-product-link" href="#">
                 <img class="car-product-image" src="images/productfour.jpg" width="360" height="380px"
                   alt="Любительская селфи-палка"></a>
@@ -220,14 +220,17 @@
           </ul>
 
           <button class="button pagination-show-more" type="button">Загрузить еще</button>
-          <div class="pagination">
-            <a class="pagination-button">Назад</a>
 
-            <ul class="pagination-list">
+          <div class="pagination">
+
+
+            <a class="pagination-button pagination-button-prev" href="#">Назад</a>
+
+            <ul class="pagination-list pagination-list-control">
               <li class="pagination-list-item">
-                <a class="pagination-link pagination-link-current">1</a>
+                <a class="pagination-link pagination-link-current" href="#">1</a>
               </li>
-              <li class="pagination-list-item">
+              <li class="pagination-list-item ">
                 <a class="pagination-link" href="#">2</a>
               </li>
               <li class="pagination-list-item">
@@ -237,33 +240,37 @@
                 <a class="pagination-link" href="#">15</a>
               </li>
             </ul>
-            <a class="pagination-button" href="#">Вперёд</a>
+
+            <a class="pagination-button pagination-button-next" href="#">Вперёд</a>
+
           </div>
         </div>
+
+
   </main>
 
-  <div class="page-footer">
-    <section class="footer-contacts">
+  <footer class="page-footer">
+    <section class="footer-contacts footer-contacts-user-panel">
       <h2 class="visually-hidden">Контакты</h2>
       <img class="footer-contacts-logo" src="images/logoyellow.svg" width="145" height="35" alt="device">
       <address class="footer-contacts-address">
-        <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+        <p class="about-text about-text-contacts">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
       </address>
 
       <nav class="navigation">
         <ul class="navigation-list ">
           <li class="navigation-item">
-            <a class="footer-navigation-link" href="#">Доставка</a>
+            <a class="footer-navigation-link footer-navigation-link-delivery" href="#">Доставка</a>
           </li>
           <li class="navigation-item-link">
-            <a class="footer-navigation-link" href="#">Гарантия</a>
+            <a class="footer-navigation-link footer-navigation-link-warranty" href="#">Гарантия</a>
           </li>
           <li class="navigation-item-link">
-            <a class="footer-navigation-link" href="#">Контакты</a>
+            <a class="footer-navigation-link footer-navigation-link-contacts" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
-      <a class="footer-phone" href="tel:+7(812)812-12-12">Тел.:+7(812)812-12-12</a>
+      <a class="footer-phone footer-phone-info" href="tel:+7(812)812-12-12">Тел.:+7(812)812-12-12</a>
 
     </section>
 
@@ -295,7 +302,7 @@
       </a>
 
     </section>
-  </div>
+
 
   </footer>
 </body>
