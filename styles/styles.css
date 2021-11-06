@@ -30,11 +30,17 @@
     font-display: swap;
 }
 
+* {
+    box-sizing: border-box;
+    
+}
+
 html {
     height: 100%;
 }
 
 body {
+    min-width: 1200px;
     height: 100%;
     margin: 0;
     padding-top: 40px;
@@ -42,8 +48,14 @@ body {
     flex-direction: column;
     font-family: "Rubik", sans-serif;
     font-size: 16px;
-    line-height: 19px;
     background-color: #FFFFFF;
+    
+}
+
+.device-logo {
+    position: absolute;
+    top: -23px;
+    left: 61px;
 }
 
 .visually-hidden {
@@ -58,20 +70,30 @@ body {
 } 
 
 .page-header {
-    background-color: #FFE17F;  
+    position: relative;
+    width: 1160px;
+    margin: 0 auto;
+    padding-top: 49px;
+    padding-right: 59px;
+    padding-bottom: 152px;
+    padding-left: 60px;
+    background-color: #FFE17F;   
 }
 
 .top-navigation {
-    display: flex;  
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 29px;
+    padding: 0;
+    list-style-type: none;
 }
 
 .top-navigation-item-text {
-    margin-right: 385px;
+    margin-right: auto;
 }
 
 .form-search-search {
-    margin-right: 385px;
-    margin-left: 96px;
     font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -91,41 +113,29 @@ body {
 
 .top-navigation-item-enter {
     margin-right: 187px;
-    margin-left: auto;
 }
 
 .top-navigation-item-compare {
-    margin-right: 40px;
-}
-
-.top-navigation-cart {
     margin-right: 55px;
 }
 
 .navigation-list {
     display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
 }
 
-.navigation-link-current {
-    margin-left: 60px;
-    margin-right: 20px;
+.navigation-item-catalog {
+    margin-right: auto;
 }
 
-.button-all-link {
-    margin-left: 20px;
-    margin-right: 247px;
-}
-
-.navigation-link-delivery {
+.navigation-item-delivery {
     margin-right: 34px;
 }
 
-.navigation-link-warranty {
+.navigation-item-warranty {
     margin-right: 93px;
-}
-
-.navigation-link-contacts {
-    margin-right: 59px;
 }
 
 .navigation-link {
@@ -137,14 +147,51 @@ body {
     color: #000000;
     text-decoration: none;
     text-transform: uppercase;
+    letter-spacing: 0.2em;
 }
 
 .main-container {
+    width: 1440px;
+    margin: 0 auto;
     flex-grow: 1;
+    padding-left: 140px;
+    padding-right: 140px;
+    max-width: 100%;
 }
 
 .gallery {
+    margin: 0 auto;
+}
+
+.gallery-container {
+    
+}
+
+.gallery-arrows {
+    width: 550px;
+    position: absolute;
     display: flex;
+    justify-content: space-between;
+    top: 550px;
+}
+
+.gallery-slide {
+    display: flex;
+    background-color: chocolate;
+}
+
+.slide-img {
+    margin: 0 auto;
+}
+
+.slide-info {
+    
+}
+
+.slide-number-info {
+    width: 250px;
+    margin-top: 45px;
+    margin-left: 301px;
 }
 
 .slide-number { 
@@ -152,9 +199,8 @@ body {
     font-style: normal;
     font-weight: 800;
     font-size: 180px;
-    line-height: 30px;
     color: #FFFFFF;
-    background-color: #FFE17F;
+    
 }
 
 .slide-header {
@@ -166,10 +212,15 @@ body {
 }
 
 .slide-header-text {
-    margin-left: 740px; 
+    display: block;
+    margin-left: 40px;
+    margin-bottom: 19px;
 }
 
 .slide-description {
+    margin-top: 19px;
+    margin-bottom: 30px;
+    margin-left: 40px;
     font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -177,7 +228,18 @@ body {
     line-height: 30px;
 }
 
+.button-detailed-enter {
+    width: 220px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    margin-left: 40px;
+    background: 0 0;
+    border: 0;
+}
+
 .button-detailed {
+    display: block;
+    padding-left: 35px;
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -187,6 +249,15 @@ body {
     color: #000000;
     background-color: #FFE17F;
     text-transform: uppercase;
+    letter-spacing: .2em;
+}
+
+.slide-specifications {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 40px;
+    margin-bottom: 129px;
+    padding: 0;
 }
 
 .slide-specifications td {
@@ -221,35 +292,66 @@ body {
     background-image:   url("../images/right.svg");
 }
 
+.gallery-pagination {
+    position: absolute;
+    right: 61px;
+    bottom: 253px;
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+}
+
+.product {
+    padding-top: 70px;
+    padding-bottom: 69px;
+}
+
 .product-list {
     display: flex;
-    width: 1160px;
-    
+    margin: 0;
+    padding: 0;
+    list-style-type: none;  
+    justify-content: space-between;
 }
 
 .product-card-vr {
-    margin-right: 40px;
-    margin-left: 140px;
+    
+}
+
+.product-card-link-vr{
+    
 }
 
 .product-card-selfi {
-    margin-right: 40px;
+    
+}
+
+.product-card-link-selfi{
+    
 }
 
 .product-card-cam {
-    margin-right: 40px;
+    
+}
+
+.product-card-link-cam {
+
 }
 
 .product-card-fit {
-    margin-right: 40px;
+    
 }   
 
-.product-card-watch {
-    margin-right: 40px;
+.product-card-link-fit {
+
 }
 
-.product-card-copter {
-    margin-right: 140px;
+.product-card-watch {
+    
+}
+
+.product-card-link-watch {
+
 }
 
 .product-card-image {
@@ -267,12 +369,34 @@ body {
 }
 
 .page-main-services {
-    width: 1440px;
     background-color:  #F0F0F0;
 }
 
+.services-controls {
+    position: relative;
+    padding-top: 50px;
+    padding-right: 120px;
+}
+
+.service-title-delivery {
+     
+}
+
+.service-title-warranty {
+
+}
+
+.service-title-credit {
+
+}
+
+
 .services-content-wrapper {
-    display: flex;              
+    display: flex;
+    width: 1100px;
+    list-style-type: none;
+    margin: 0 auto;
+    
 }
 
 .services-controls-current {
@@ -280,6 +404,15 @@ body {
 }
 
 .services-controls-button {
+    position: relative;
+    z-index: 1;
+    display: block;
+    order: 1;
+    width: 160px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 3px;
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -288,6 +421,18 @@ body {
     color: #000000;
     background-color: #FFC700;
     text-transform: uppercase;
+}
+
+.services-list-item {
+    display: none;
+}
+
+.services-list-item-current {
+    display: block;
+    position: relative;
+    order: 2;
+    width: 460px;
+    margin-left: 120px;
 }
 
 .service-title {
@@ -300,6 +445,8 @@ body {
 }
 
 .service-description {
+    margin-top: 34px;
+    margin-bottom: 134px;
     font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -311,10 +458,15 @@ body {
 .delivery {
     display: flex;
     width: 1160px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 90px;
     background-color: #F0F0F0;   
 }
 
 .button-delivery {
+    margin: 0 auto;
+    padding-top: 37px;
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -323,32 +475,39 @@ body {
     color: #000000;
     text-decoration: none;
     text-transform: uppercase;
+    letter-spacing: 0.2em;
 }
 
 .appointment-contacts {
     display: flex;
-    width: 1440px;
+    justify-content: space-between;
+    padding-top: 97px;
+    padding-bottom: 87px;
+    margin: 0 auto;
 }
 
 .company-info {
-    width: 560px;
-    margin-right: 40px;
-    margin-left: 140px;
+    width: 497px;
+    margin-right: 103px;  
 }
 
 .contacts-info {
     width: 560px;
-    margin-right: 140px;
-    margin-left: 40px;
 }
 
 .appointment-title {
+    margin: 0;
+    padding-bottom: 43px;
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 50px;
     line-height: 50px;
     color:#000000;
+}
+
+.appointment-title-text{
+    padding-bottom: 23px;
 }
 
 .appointment-text-info {
@@ -360,7 +519,21 @@ body {
     color:#444444;
 }
 
+.appointment-text-info-choice {
+    width: 460px;
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+.appointment-text-info-deliver {
+
+}
+
 .appointment-list {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 52px;
+    padding-left: 26px;
     font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -370,6 +543,7 @@ body {
 }
 
 .button-info {
+    width: 260px;
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -386,6 +560,8 @@ body {
 }
 
 .contacts-title {
+    margin: 0;
+    padding-bottom: 43px;
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -395,6 +571,9 @@ body {
 }
 
 .contact-text {
+    width: 498px;
+    margin: 0;
+    padding-bottom: 30px;
     font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -404,6 +583,8 @@ body {
 }
 
 .contacts-subtitle {
+    margin: 0;
+    padding-bottom: 15px;
     font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -412,7 +593,12 @@ body {
     color: #444444;
 }
 
+.contacts-address {
+    padding-bottom: 29px;
+}
+
 .contacts-address-text {
+    margin: 0;
     font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -430,13 +616,30 @@ body {
     color: #444444;
 }
 
+.contacts-subtitle-time {
+    margin: 0;
+    padding-bottom: 15px;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+}
+
 .contacts-schedule {
+    margin-bottom: 67px;
+    padding: 0;
     font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 30px;
     color: #444444;
+    list-style-type: none;
+}
+
+.contacts-schedule-item {
+
 }
 
 .button-write {
@@ -452,16 +655,25 @@ body {
 }
 
 .subscribe {
-    display: flex;
-    width: 1440px;
     background-color: #F0F0F0;
 }
+
+.subscribe-container {
+    margin: 0 auto;
+    padding-top: 75px;
+    padding-bottom: 134px;
+    width: 1160px;   
+}
+
 .subscribe-text-info {
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .description-text-info {
-
+    margin-top: 86px;
+    margin-right: 140px;
 }
 
 .subscribe-text {
@@ -471,9 +683,23 @@ body {
     font-size: 50px;
     line-height: 50px;
     color: #000000;
+    margin-bottom: 60px;
+}
+
+.subscribe-text-header {
+    width: 350px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
 }
 
 .description-text {
+    width: 560px;
+    margin: 0;
     font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -483,6 +709,9 @@ body {
 }
 
 .appointment-mail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -501,7 +730,13 @@ body {
     text-transform: uppercase;
 }
 
+.button-appointment-info {
+    width: 260px;
+    margin: 0;
+}
+
 .text-info {
+    margin: 0;
     font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -513,41 +748,33 @@ body {
 
 
 .page-footer {
-    background-color: #444444;
-    
+    padding-top: 62px;
+    padding-bottom: 64px;
+    background-color: #444444; 
 }
 
-.footer-contacts-user-panel {
+.container {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.page-footer-user-panel {
+   display: flex;
+}
+
+.page-footer-logo {
+    margin-bottom: 35px;
+}
+
+.page-footer-info {
     display: flex;
-    
+    justify-content: space-between;
+    padding-bottom: 66px;
 }
 
-.footer-contacts-logo {
-    
-}
-
-.about-text-contacts {
-   
-}
-
-.footer-navigation-link-delivery {
-    margin-right: 32px;
-}
-
-.footer-navigation-link-warranty {
-    margin-right: 32px;
-}
-
-.footer-navigation-link-contacts {
-    margin-right: 187px;
-}
-
-.footer-phone-info {
-    margin-left: 187px;
-    margin-right: 140px;
-}
-
-.about-text {
+.page-footer-address {
+    margin-right: 126px;
+    width: 238px;
     font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -557,7 +784,11 @@ body {
     text-decoration: none;
 }
 
-.footer-navigation-link {
+.page-footer-services {
+    padding-top: 6px;
+}
+
+.page-footer-services-link {
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -566,9 +797,19 @@ body {
     color: #FFFFFF;
     text-decoration: none;
     text-transform: uppercase;
+    letter-spacing: .2em;
 }
 
-.footer-phone {
+.page-footer-services-link-delivery {
+    margin-right: 32px;
+}
+
+.page-footer-services-link-warranty {
+    margin-right: 32px;
+}
+
+.page-footer-phone-text {
+    margin-left: 177px;
     font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -578,22 +819,52 @@ body {
     text-decoration: none;
 }
 
+.page-footer-links {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.page-footer-links-wrap {
+    display: flex;
+    justify-content: space-between;
+
+}
+
 .footer-social-item {
+    list-style-type: none;
     background: url("../images/facebook.svg") no-repeat, center,
                 url("../images/insta.svg") no-repeat, center,
                 url("../images/twiter.svg") no-repeat, center;
 }
 
-.navigation-item-name {
+.top-navigation-item-enter {
     margin-right: 29px;
 }
 
 .top-navigation-item-exit {
-    margin-right: 51px;
+    color: #000000;
+    opacity: 0.3;
+    margin-right: 61px;
 }
 
+.page-main {
+    padding-top: 37px;
+    width: 1440px;
+    margin: 0 auto;
+    flex-grow: 1;
+    padding-left: 140px;
+    padding-right: 140px;
+    max-width: 100%;
+}
+
+.page-main-header {
+    width: 1160px;
+    margin: 0 auto;
+}   
 
 .page-main-title {
+    margin-bottom: 14px;
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -601,27 +872,25 @@ body {
     line-height: 50px;
     color: #000000;
 }
+
+.breadcrumbs {
+    list-style-type: none; 
+    padding: 0;
+}    
+
 .breadcrumbs-text {
+    margin-bottom: 49px;
     display: flex;
-    width: 425px;
 }
 
-.breadcrumbs-link-main {
+.breadcrumbs-item-main {
     margin-right: 36px;
 }
 
-.breadcrumbs-link-catalog {
+.breadcrumbs-item-catalog {
     margin-right: 34px;
 }
-
-.breadcrumbs-link-selfi {
-    margin-right: 815px;
-}
-
-.breadcrumbs {
-    width: 425px;
-}       
-
+  
 .breadcrumbs-link {
     font-family: "Rubik", sans-serif;
     font-style: normal;
@@ -630,17 +899,21 @@ body {
     line-height: 19px;
     color: #000000;
     text-decoration: none;
+    
 }
 
 .catalog-filters-page {
     display: flex;
 }
 
-.catalog-filters {
+.catalog-filter-heading-filter {
     width: 468px;
-    margin-right: 68px;
-    background-color: #E5E5E5;
+    margin: 0 auto;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    padding-left: 200px;
 }
+
 
 .catalog-filter-heading {
     font-family: "Raleway", sans-serif;
@@ -650,6 +923,7 @@ body {
     line-height: 19px;
     background-color: #DCDCDC;
     text-transform: uppercase;
+    letter-spacing: 0.2em;
 }
 
 .catalog-filter-title {
@@ -659,6 +933,10 @@ body {
     font-size: 18px;
     line-height: 20px;
     color: #000000;
+}
+
+.catalog-filter-title {
+    
 }
 
 .control-label {
@@ -680,7 +958,17 @@ body {
     background-color:#FFC700;
 }
 
+
+.sorting-type {
+    display: flex;
+    margin: 0 auto;
+    width: 972px;
+    background-color: #EBEBEB;
+}
+
 .sorting-heading { 
+    padding-left: 72px;
+    width: 200px;
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -693,12 +981,15 @@ body {
 }
 
 .select-control {
+    margin-left: 53px;
     font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
     color: #000000; 
+    background-color: #EBEBEB;
+
 }
 
 .catalog-right-column {
@@ -743,6 +1034,14 @@ body {
     line-height: 21px;
 }
 
+.pagination-show-more-text {
+    width: 760px;
+    margin-top: 44px;
+    margin-bottom: 51px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
 .pagination-show-more {
     font-family: "Raleway", sans-serif;
     font-style: normal;
@@ -769,9 +1068,9 @@ body {
 
 .pagination-button-next {
     margin-top: 26px;
-    margin-right: 30px;
     margin-bottom: 25px;
     margin-left: 162px;
+    margin-right: 30px;
 }
 
 .pagination-list-control {
@@ -792,6 +1091,12 @@ body {
     color: #000000;
     text-decoration: none;
     text-transform: uppercase;
+    letter-spacing: 0.2em;
+    
+}
+
+.pagination-list-item {
+    margin-right: 22px;
 }
 
 .pagination-link {
@@ -802,4 +1107,5 @@ body {
     line-height: 19px;
     color: #000000;
     text-decoration: none;
+    opacity: 0.3;
 }

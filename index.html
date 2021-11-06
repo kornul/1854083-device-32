@@ -36,20 +36,17 @@
       </ul>
 
       <ul class="navigation-list">
-        <li class="navigation-item">
-          <a class="navigation-link navigation-link-current" href="#">Каталог товаров</a>
+        <li class="navigation-item navigation-item-catalog">
+          <a class="navigation-link " href="#">Каталог товаров</a>
         </li>
-        <li class="navigation-item">
-          <a class="button button-all button button-all-link" href="#">Круг</a>
+        <li class="navigation-item navigation-item-delivery">
+          <a class="navigation-link" href="#">Доставка</a>
         </li>
-        <li class="navigation-item">
-          <a class="navigation-link navigation-link-delivery" href="#">Доставка</a>
+        <li class="navigation-item navigation-item-warranty">
+          <a class="navigation-link" href="#">Гарантия</a>
         </li>
-        <li class="navigation-item">
-          <a class="navigation-link navigation-link-warranty" href="#">Гарантия</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link navigation-link-contacts" href="#">Контакты</a>
+        <li class="navigation-item navigation-item-contacts">
+          <a class="navigation-link" href="#">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -67,24 +64,25 @@
             </div>
 
 
-            <div class="slide-info"></div>
-            <div class="slide-number">01</div>
-            <h2 class="slide-header slide-header-text">Порхает как бабочка, жалит как пчела!</h2>
-            <p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
-              замаскированным под стандартную камеру.</p>
-            <a class="button-detailed" href="#">Подробнее</a>
+            <div class="slide-info">
+              <div class="slide-number slide-number-info">01</div>
+              <h2 class="slide-header slide-header-text">Порхает как бабочка, жалит как пчела!</h2>
+              <p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+                замаскированным под стандартную камеру.</p>
+              <a class="button-detailed button-detailed-enter" href="#">Подробнее</a>
 
-            <table class="slide-specifications">
-              <tr>
-                <td>800м</td>
-                <td>50м</td>
-              </tr>
+              <table class="slide-specifications">
+                <tr>
+                  <td>800м</td>
+                  <td>50м</td>
+                </tr>
 
-              <tr>
-                <th>Дальность полета</th>
-                <th>Радиус поражения</th>
-              </tr>
-            </table>
+                <tr>
+                  <th>Дальность полета</th>
+                  <th>Радиус поражения</th>
+                </tr>
+              </table>
+            </div>
 
           </article>
         </div>
@@ -101,48 +99,48 @@
       </div>
     </section>
 
-    <section>
+    <section class="product">
       <ul class="product-list">
         <li class="product-card product-card-vr">
           <a class="product-card-link" href="#">
             <img class="product-card-image" src="images/glasses.svg" width="97" height="55"
               alt="Виртуальная реальность">
-            <p class="product-card-link ">Виртуальная реальность</p>
+            <p class="product-card-link-vr">Виртуальная реальность</p>
           </a>
         </li>
 
         <li class="product-card product-card-selfi">
           <a class="product-card-link" href="#">
             <img class="product-card-image" src="images/monopod.svg" width="86" height="117" alt="Моноподы для селфи">
-            <p class="product-card-link">Моноподы для селфи</p>
+            <p class="product-card-link-selfi">Моноподы для селфи</p>
           </a>
         </li>
 
         <li class="product-card product-card-cam">
           <a class="product-card-link" href="#">
             <img class="product-card-image" src="images/camera.svg" width="71" height="87" alt="Экшн-камеры">
-            <p class="product-card-link">Экшн-камеры</p>
+            <p class="product-card-link-cam">Экшн-камеры</p>
           </a>
         </li>
 
         <li class="product-card product-card-fit">
           <a class="product-card-link" href="#">
             <img class="product-card-image" src="images/bracelet.svg" width="107" height="65" alt="Фитнес-браслеты">
-            <p class="product-card-link">Фитнес-браслеты</p>
+            <p class="product-card-link-fit">Фитнес-браслеты</p>
           </a>
         </li>
 
         <li class="product-card product-card-watch">
           <a class="product-card-link" href="#">
             <img class="product-card-image" src="images/watch.svg" width="56" height="98" alt="Умные часы">
-            <p class="product-card-link">Умные часы</p>
+            <p class="product-card-link-watch">Умные часы</p>
           </a>
         </li>
 
         <li class="product-card product-card-copter">
           <a class="product-card-link" href="#">
             <img class="product-card-image" src="images/quadrocopter.svg" width="132" height="69" alt="Квадрокоптеры">
-            <p class="product-card-link">Квадрокоптеры</p>
+            <p class="product-card-link-copter">Квадрокоптеры</p>
           </a>
         </li>
       </ul>
@@ -162,7 +160,7 @@
         <ul class="services-list">
           <li class="services-list-item service services-list-item-current service-delivery">
             <div class="service-content-wrapper">
-              <h3 class="service-title">Доставка</h3>
+              <h3 class="service-title service-title-delivery">Доставка</h3>
 
               <p class="service-description">Мы с удовольствием доставим ваш товар прямо к вашему
                 подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
@@ -170,7 +168,7 @@
           </li>
           <li class="services-list-item service service-warranty">
             <div class="service-content-wrapper">
-              <h3 class="service-title">Гарантия</h3>
+              <h3 class="service-title service-title-warranty">Гарантия</h3>
 
               <p class="service-description">Если из-за возгорания купленного у нас товара у вас сгорит дом —
                 не переживайте, мы выдадим вам новый.Товар, не дом, конечно же.</p>
@@ -178,7 +176,7 @@
           </li>
           <li class="services-list-item service service service-credit">
             <div class="service-content-wrapper">
-              <h3 class="service-title">Кредит</h3>
+              <h3 class="service-title service-title-credit">Кредит</h3>
 
               <p class="service-description">Залезть в долговую яму стало проще! Кредитные консультанты
                 подберут для вас наиболее выгодные условия кредита.Выгодные для нашего банка, разумеется.</p>
@@ -198,13 +196,16 @@
     <div class="appointment-contacts">
       <section class="company company-info">
         <h2 class="appointment-title">О нас</h2>
+        <div class="appointment-title-text">
+          <p class="appointment-text-info appointment-text-info-choice">Огромный выбор гаджетов не оставит равнодушным
+            гика, который есть в каждом из
+            нас.
+          </p>
 
-        <p class="appointment-text-info">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из
-          нас.
-        </p>
-
-        <p class="appointment-text-info">Мы можем доставить ваш товар в самые отдалённые уголки России
-          транспортными компаниями:</p>
+          <p class="appointment-text-info appointment-text-info-deliver">Мы можем доставить ваш товар в самые отдалённые
+            уголки России
+            транспортными компаниями:</p>
+        </div>
 
         <ul class="appointment-list">
           <li class="appointment-list">Меловые линии</li>
@@ -222,11 +223,12 @@
           работоспособность покупки.</p>
 
         <p class="contacts-subtitle">Интернет-магазин «Девайс»</p>
+
         <address class="contacts-address">
           <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
           <a class="contacts-phone" href="tel:+7(812)812-12-12">+7 (812) 812-12-12</a>
         </address>
-        <p class="contacts-subtitle">Время работы</p>
+        <p class="contacts-subtitle-time">Время работы</p>
         <ul class="contacts-schedule">
           <li class="contacts-schedule-item">пн-пт: с 10:00 до 22:00</li>
           <li class="contacts-schedule-item">сб-вс: с 10:00 до 19:00</li>
@@ -236,9 +238,13 @@
     </div>
 
 
-    <div class="subscribe">
+
+  </main>
+
+  <section class="subscribe">
+    <div class="subscribe-container">
       <div class="subscribe-text subscribe-text-info">
-        <p>Подпишитесь на рассылку</p>
+        <h2 class="subscribe-text-header">Подпишитесь на рассылку</h2>
         <p class="description-text description-text-info">Еженедельный дайджест с обзорами новинок, длительными
           тест-драйвами, распаковками,
           атакже акции, спецпредложения и вот это вот всё.</p>
@@ -249,69 +255,65 @@
       <div class="appointment-mail">
         <form сlass="appointment" action="">
           <input type="text" id="appointment-mail" name="appointment-mail" placeholder="Ваш E-mail">
-          <button class="button-appointment" type="submit">Подписаться</button>
+          <button class="button-appointment button-appointment-info" type="submit">Подписаться</button>
         </form>
         <p class="text-info">Это бесплатно</p>
 
       </div>
     </div>
-  </main>
+  </section>
 
   <footer class="page-footer">
-    <section class="footer-contacts footer-contacts-user-panel">
-      <h2 class="visually-hidden">Контакты</h2>
-      <img class="footer-contacts-logo" src="images/logoyellow.svg" width="145" height="35" alt="device">
-      <address class="footer-contacts-address">
-        <p class="about-text about-text-contacts">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-      </address>
-
-      <nav class="navigation">
-        <ul class="navigation-list ">
-          <li class="navigation-item">
-            <a class="footer-navigation-link footer-navigation-link-delivery" href="#">Доставка</a>
-          </li>
-          <li class="navigation-item-link">
-            <a class="footer-navigation-link footer-navigation-link-warranty" href="#">Гарантия</a>
-          </li>
-          <li class="navigation-item-link">
-            <a class="footer-navigation-link footer-navigation-link-contacts" href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <a class="footer-phone footer-phone-info" href="tel:+7(812)812-12-12">Тел.:+7(812)812-12-12</a>
-
-    </section>
-
-    <section class="footer-social">
-
-      <ul class="footer-social-list">
-        <li class="footer-social-item">
-          <a class="button" href="#">
-            <span class="visually-hidden">Facebook</span>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="button" href="#">
-            <span class="visually-hidden">Инстаграм</span>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="button" href="#">
-            <span class="visually-hidden">Твиттер</span>
-          </a>
-        </li>
-      </ul>
-      <a class="footer-info" href="#">
-        <svg width="115" height="33" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M0 12.9v2.6h2.5v-2.6H0ZM11.6 4.5c-1.6 0-2.8.7-3.6 1.7h-.1V0h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2V9.4c.1-3-1.8-4.9-4.5-4.9ZM26.6 4.8h-4.8V1.1h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V6.8h4.8v-2ZM41.1 4.6c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1V4.8H29v10.6h2V10c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2V9.8c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V8.9c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 12.7c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V0h-2v12.7ZM28.9 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1V22ZM55.1 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 19.8c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V13.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 17.9c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6ZM98.2 17.9c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z"
-            fill="#FFC700" />
-        </svg>
-      </a>
-
-    </section>
-
-
+    <div class="container">
+      <div class="page-footer-user-panel">
+        <div class="page-footer-logo">
+          <a><img src="../1854083-device-32/images/logoyellow.svg" alt="DEVICE" width="145" height="36"></a>
+        </div>
+      </div>
+      <div class="page-footer-info">
+        <div class="page-footer-address">
+          <span>Санкт-Петербург, набережная реки Карповки, 5, литера П.</span>
+        </div>
+        <div class="page-footer-services">
+          <a class="page-footer-services-link  page-footer-services-link-delivery" href="#">Доставка</a>
+          <a class="page-footer-services-link  page-footer-services-link-warranty" href="#">Гарантия</a>
+          <a class="page-footer-services-link  page-footer-services-link-contacts" href="#">Контакты</a>
+        </div>
+        <div class="page-footer-phone">
+          <a class="page-footer-phone-text" href="#">Тел.:+7(812)812-12-12</a>
+        </div>
+      </div>
+      <div class="page-footer-links">
+        <div class="page-footer-links-wrap">
+          <ul class="page-footer-social-list">
+            <li class="page-footer-social-item">
+              <a class="page-footer-social-link  page-footer-social-link-fb" href="#">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="page-footer-social-item">
+              <a class="page-footer-social-link  page-footer-social-link-inst" href="#">
+                <span class="visually-hidden">Instagram</span>
+              </a>
+            </li>
+            <li class="page-footer-social-item">
+              <a class="page-footer-social-link  page-footer-social-link-tw" href="#">
+                <span class="visually-hidden">Twitter</span>
+              </a>
+            </li>
+          </ul>
+          <div class="page-footer-copyright">
+            <a class="footer-info" href="#">
+              <svg width="115" height="33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0 12.9v2.6h2.5v-2.6H0ZM11.6 4.5c-1.6 0-2.8.7-3.6 1.7h-.1V0h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2V9.4c.1-3-1.8-4.9-4.5-4.9ZM26.6 4.8h-4.8V1.1h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V6.8h4.8v-2ZM41.1 4.6c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1V4.8H29v10.6h2V10c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2V9.8c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V8.9c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 12.7c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V0h-2v12.7ZM28.9 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1V22ZM55.1 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 19.8c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V13.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 17.9c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6ZM98.2 17.9c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z"
+                  fill="#FFC700" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
 </body>
 
