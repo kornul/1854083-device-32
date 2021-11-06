@@ -909,8 +909,8 @@ body {
 .catalog-filter-heading-filter {
     width: 468px;
     margin: 0 auto;
-    padding-top: 23px;
-    padding-bottom: 23px;
+    padding-top: 25px;
+    padding-bottom: 26px;
     padding-left: 200px;
 }
 
@@ -967,8 +967,9 @@ body {
 }
 
 .sorting-heading { 
+    margin-top: 26px;
+    margin-bottom: 25px;
     padding-left: 72px;
-    width: 200px;
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
