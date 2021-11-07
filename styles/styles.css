@@ -31,8 +31,7 @@
 }
 
 * {
-    box-sizing: border-box;
-    
+    box-sizing: border-box;  
 }
 
 html {
@@ -48,8 +47,7 @@ body {
     flex-direction: column;
     font-family: "Rubik", sans-serif;
     font-size: 16px;
-    background-color: #FFFFFF;
-    
+    background-color: #FFFFFF;   
 }
 
 .device-logo {
@@ -164,7 +162,7 @@ body {
 }
 
 .gallery-container {
-    
+    position: relative;
 }
 
 .gallery-arrows {
@@ -172,7 +170,7 @@ body {
     position: absolute;
     display: flex;
     justify-content: space-between;
-    top: 550px;
+    top: 250px;
 }
 
 .gallery-slide {
@@ -182,10 +180,6 @@ body {
 
 .slide-img {
     margin: 0 auto;
-}
-
-.slide-info {
-    
 }
 
 .slide-number-info {
@@ -199,8 +193,7 @@ body {
     font-style: normal;
     font-weight: 800;
     font-size: 180px;
-    color: #FFFFFF;
-    
+    color: #FFFFFF;    
 }
 
 .slide-header {
@@ -240,6 +233,7 @@ body {
 .button-detailed {
     display: block;
     padding-left: 35px;
+    margin-bottom: 70px;
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -261,6 +255,8 @@ body {
 }
 
 .slide-specifications td {
+    padding-bottom: 11px;
+    padding-right: 58px;
     font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -269,6 +265,7 @@ body {
 }
 
 .slide-specifications th {
+    padding-right: 20px;
     font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -295,7 +292,7 @@ body {
 .gallery-pagination {
     position: absolute;
     right: 61px;
-    bottom: 253px;
+    bottom: 270px;
     display: flex;
     justify-content: space-between;
     width: 80px;
@@ -312,46 +309,6 @@ body {
     padding: 0;
     list-style-type: none;  
     justify-content: space-between;
-}
-
-.product-card-vr {
-    
-}
-
-.product-card-link-vr{
-    
-}
-
-.product-card-selfi {
-    
-}
-
-.product-card-link-selfi{
-    
-}
-
-.product-card-cam {
-    
-}
-
-.product-card-link-cam {
-
-}
-
-.product-card-fit {
-    
-}   
-
-.product-card-link-fit {
-
-}
-
-.product-card-watch {
-    
-}
-
-.product-card-link-watch {
-
 }
 
 .product-card-image {
@@ -378,29 +335,11 @@ body {
     padding-right: 120px;
 }
 
-.service-title-delivery {
-     
-}
-
-.service-title-warranty {
-
-}
-
-.service-title-credit {
-
-}
-
-
 .services-content-wrapper {
     display: flex;
     width: 1100px;
     list-style-type: none;
-    margin: 0 auto;
-    
-}
-
-.services-controls-current {
-
+    margin: 0 auto;    
 }
 
 .services-controls-button {
@@ -525,10 +464,6 @@ body {
     padding-bottom: 30px;
 }
 
-.appointment-text-info-deliver {
-
-}
-
 .appointment-list {
     margin: 0;
     padding: 0;
@@ -638,10 +573,6 @@ body {
     list-style-type: none;
 }
 
-.contacts-schedule-item {
-
-}
-
 .button-write {
     font-family: "Raleway", sans-serif;
     font-style: normal;
@@ -744,8 +675,6 @@ body {
     line-height: 30px;
     color: #444444;
 }
-
-
 
 .page-footer {
     padding-top: 62px;
@@ -902,9 +831,14 @@ body {
     
 }
 
+.catalog-filters {
+    background-color: #E5E5E5;
+}
+
 .catalog-filters-page {
     display: flex;
 }
+
 
 .catalog-filter-heading-filter {
     width: 468px;
@@ -913,7 +847,6 @@ body {
     padding-bottom: 26px;
     padding-left: 200px;
 }
-
 
 .catalog-filter-heading {
     font-family: "Raleway", sans-serif;
@@ -926,6 +859,32 @@ body {
     letter-spacing: 0.2em;
 }
 
+.catalog-filter {
+    width: 207px;
+    padding-left: 193px;
+    padding-top: 83px;
+}
+
+.catalog-filter-group-cost {
+    border: none;
+}
+
+.catalog-filter-group-color {
+    border: none;
+    margin-top: 48px;
+}
+
+.catalog-filter-list {
+    margin-top: 28px;
+    padding: 0;
+    list-style: none;
+}
+
+.catalog-filter-group-other {
+    border: none;
+    margin-top: 57px;
+}
+
 .catalog-filter-title {
     font-family: "Rubik", sans-serif;
     font-style: normal;
@@ -933,10 +892,6 @@ body {
     font-size: 18px;
     line-height: 20px;
     color: #000000;
-}
-
-.catalog-filter-title {
-    
 }
 
 .control-label {
@@ -948,6 +903,8 @@ body {
 }
 
 .form-catalog-button {
+    width: 100%;
+    margin-top: 51px;
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -990,7 +947,6 @@ body {
     line-height: 19px;
     color: #000000; 
     background-color: #EBEBEB;
-
 }
 
 .catalog-right-column {
@@ -1044,6 +1000,7 @@ body {
 }
 
 .pagination-show-more {
+    margin-left: 72px;
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -1055,8 +1012,10 @@ body {
 }
 
 .pagination {
+    margin-left: 72px;
     display: flex;
     width: 760px;
+    margin-bottom: 77px;
     background-color: #EBEBEB;
 }
 
@@ -1092,8 +1051,7 @@ body {
     color: #000000;
     text-decoration: none;
     text-transform: uppercase;
-    letter-spacing: 0.2em;
-    
+    letter-spacing: 0.2em;  
 }
 
 .pagination-list-item {
@@ -1109,4 +1067,20 @@ body {
     color: #000000;
     text-decoration: none;
     opacity: 0.3;
+}
+
+.bottom {
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 8px 35px;
+    font-family: "Raleway" ,sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: #000;
+    background-color: transparent;
+    border: none;
 }
