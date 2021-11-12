@@ -56,20 +56,20 @@
   </header>
 
   <main class="page-main">
-      <div class="page-main-header">
-        <h1 class="page-main-title">Моноподы для селфи</h1>
+    <div class="page-main-header">
+      <h1 class="page-main-title">Моноподы для селфи</h1>
 
-        <ul class="breadcrumbs breadcrumbs-text">
-          <li class="breadcrumbs-item breadcrumbs-item-main">
-            <a class="breadcrumbs-link" href="index.html">Главная</a>
-          </li>
-          <li class="breadcrumbs-item breadcrumbs-item-catalog">
-            <a class="breadcrumbs-link" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="breadcrumbs-item breadcrumbs-item-selfi">
-            <a class="breadcrumbs-link">Моноподы для селфи</a>
-          </li>
-        </ul>
+      <ul class="breadcrumbs breadcrumbs-text">
+        <li class="breadcrumbs-item breadcrumbs-item-main">
+          <a class="breadcrumbs-link" href="index.html">Главная</a>
+        </li>
+        <li class="breadcrumbs-item breadcrumbs-item-catalog">
+          <a class="breadcrumbs-link" href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="breadcrumbs-item breadcrumbs-item-selfi">
+          <a class="breadcrumbs-link">Моноподы для селфи</a>
+        </li>
+      </ul>
     </div>
 
 
@@ -79,20 +79,19 @@
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group-cost">
             <legend class="catalog-filter-title">Стоимость</legend>
-            <button class="range-toggle toggle-min" type="button">
-              <span class="visually-hidden">Имзенить минимальную цену.</span>
-            </button>
-            <button class="range-toggle toggle-max" type="button">
-              <span class="visually-hidden">Изменить максимальную цену.</span>
-            </button>
-            <label class="catalog-filter-label">
-              от <input class="catalog-filter-input" type="number" name="min-price"> ₽
-            </label>
-
-
-            <label class="catalog-filter-label">
-              до <input class="catalog-filter-input" type="number" name="max-price"> ₽
-            </label>
+            <div class="filter-price-range">
+              <div class="price-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
+              <label class="price-label" for="filter-min-price">от</label>
+              <input class="price-value" type="text" name="min-price" id="filter-min-price" value="0">
+              <label class="price-label" for="filter-max-price">до</label>
+              <input class="price-value" type="text" name="max-price" id="filter-max-price" value="5000">
+            </div>
           </fieldset>
 
           <fieldset class="catalog-filter-group-color">
@@ -216,14 +215,15 @@
             </li>
           </ul>
 
-          <button class="button pagination-show-more pagination-show-more-text" type="button">Загрузить еще</button>
+          <div>
+            <button class="button pagination-show-more pagination-show-more-text" type="button">Загрузить еще</button>
+          </div>
 
           <div class="pagination">
 
-
-            <a class="pagination-button pagination-button-prev" href="#">Назад</a>
-
             <ul class="pagination-list pagination-list-control">
+              <a class="pagination-button pagination-button-prev" href="#">Назад</a>
+
               <li class="pagination-list-item">
                 <a class="pagination-link pagination-link-current" href="#">1</a>
               </li>
@@ -239,10 +239,9 @@
               <li class="pagination-list-item">
                 <a class="pagination-link" href="#">15</a>
               </li>
+
+              <a class="pagination-button pagination-button-next" href="#">Вперёд</a>
             </ul>
-
-            <a class="pagination-button pagination-button-next" href="#">Вперёд</a>
-
           </div>
         </div>
 
