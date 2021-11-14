@@ -1138,22 +1138,6 @@ body {
     padding: 0;
 }
 
-.card-product-amateur {
-    margin-right: 40px;
-}
-
-.card-product-professional {   
-    margin-right: auto;
-}
-
-.card-product-unsinkable {
-    margin-right: 40px;
-}
-
-.card-product-follow {
-    margin-right: auto;
-}
-
 .card-product-text {
     font-family: "Rubik", sans-serif;
     font-style: normal;
