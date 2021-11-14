@@ -64,7 +64,7 @@
             </div>
 
 
-            <div class="slide-info">
+            <div class="slide-info slide-info-right-column">
               <div class="slide-number slide-number-info">01</div>
               <h2 class="slide-header slide-header-text">Порхает как бабочка, жалит как пчела!</h2>
               <p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
@@ -92,9 +92,10 @@
           <button class="gallery-arrow arrow-right"><span class="visually-hidden">Следующее фото</span></button>
         </div>
         <div class="gallery-pagination">
-          <button class="gallery-pagination-button" type="button" aria-label="1"></button>
-          <button class="gallery-pagination-button" type="button" aria-label="2"></button>
-          <button class="gallery-pagination-button" type="button" aria-label="3"></button>
+          <button class="gallery-pagination-button-control gallery-pagination-button-control-active" type="button"
+            aria-label="1"></button>
+          <button class="gallery-pagination-button-control" type="button" aria-label="2"></button>
+          <button class="gallery-pagination-button-control" type="button" aria-label="3"></button>
         </div>
       </div>
     </section>
@@ -103,44 +104,56 @@
       <ul class="product-list">
         <li class="product-card product-card-vr">
           <a class="product-card-link" href="#">
-            <img class="product-card-image" src="images/glasses.svg" width="97" height="55"
-              alt="Виртуальная реальность">
-            <p class="product-card-link-vr">Виртуальная реальность</p>
+            <div class="product-card-link-wrap product-card-link-wrap-vr">
+              <img class="product-card-image" src="images/glasses.svg" width="97" height="55"
+                alt="Виртуальная реальность">
+            </div>
+            <p class="product-card-link-text">Виртуальная реальность</p>
           </a>
         </li>
 
         <li class="product-card product-card-selfi">
           <a class="product-card-link" href="#">
-            <img class="product-card-image" src="images/monopod.svg" width="86" height="117" alt="Моноподы для селфи">
-            <p class="product-card-link-selfi">Моноподы для селфи</p>
+            <div class="product-card-link-wrap product-card-link-wrap-selfi">
+              <img class="product-card-image" src="images/monopod.svg" width="86" height="117" alt="Моноподы для селфи">
+            </div>
+            <p class="product-card-link-text">Моноподы для селфи</p>
           </a>
         </li>
 
         <li class="product-card product-card-cam">
           <a class="product-card-link" href="#">
-            <img class="product-card-image" src="images/camera.svg" width="71" height="87" alt="Экшн-камеры">
-            <p class="product-card-link-cam">Экшн-камеры</p>
+            <div class="product-card-link-wrap product-card-link-wrap-cam">
+              <img class="product-card-image" src="images/camera.svg" width="71" height="87" alt="Экшн-камеры">
+            </div>
+            <p class="product-card-link-text">Экшн-камеры</p>
           </a>
         </li>
 
         <li class="product-card product-card-fit">
           <a class="product-card-link" href="#">
-            <img class="product-card-image" src="images/bracelet.svg" width="107" height="65" alt="Фитнес-браслеты">
-            <p class="product-card-link-fit">Фитнес-браслеты</p>
+            <div class="product-card-link-wrap product-card-link-wrap-fit">
+              <img class="product-card-image" src="images/bracelet.svg" width="107" height="65" alt="Фитнес-браслеты">
+            </div>
+            <p class="product-card-link-text">Фитнес-браслеты</p>
           </a>
         </li>
 
         <li class="product-card product-card-watch">
           <a class="product-card-link" href="#">
-            <img class="product-card-image" src="images/watch.svg" width="56" height="98" alt="Умные часы">
-            <p class="product-card-link-watch">Умные часы</p>
+            <div class="product-card-link-wrap product-card-link-wrap-watch">
+              <img class="product-card-image" src="images/watch.svg" width="56" height="98" alt="Умные часы">
+            </div>
+            <p class="product-card-link-text">Умные часы</p>
           </a>
         </li>
 
         <li class="product-card product-card-copter">
           <a class="product-card-link" href="#">
-            <img class="product-card-image" src="images/quadrocopter.svg" width="132" height="69" alt="Квадрокоптеры">
-            <p class="product-card-link-copter">Квадрокоптеры</p>
+            <div class="product-card-link-wrap product-card-link-wrap-copter">
+              <img class="product-card-image" src="images/quadrocopter.svg" width="132" height="69" alt="Квадрокоптеры">
+            </div>
+            <p class="product-card-link-text">Квадрокоптеры</p>
           </a>
         </li>
       </ul>
@@ -151,14 +164,14 @@
       <h2 class="visually-hidden">Сервис</h2>
 
       <div class="services-content-wrapper">
-        <div class="services-controls services-controls">
-          <button class="services-controls-button services-controls-current" type="button">Доставка</button>
+        <div class="services-controls">
+          <button class="services-controls-button services-controls-button-active" type="button">Доставка</button>
           <button class="services-controls-button" type="button">Гарантия</button>
           <button class="services-controls-button" type="button">Кредит</button>
         </div>
 
-        <ul class="services-list">
-          <li class="services-list-item service services-list-item-current service-delivery">
+        <ul class="services-list service-list-content">
+          <li class="services-list-item services-list-item-current service-deliver service-deliver-img">
             <div class="service-content-wrapper">
               <h3 class="service-title service-title-delivery">Доставка</h3>
 
@@ -166,7 +179,7 @@
                 подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </div>
           </li>
-          <li class="services-list-item service service-warranty">
+          <li class="services-list-item service-warranty">
             <div class="service-content-wrapper">
               <h3 class="service-title service-title-warranty">Гарантия</h3>
 
@@ -174,7 +187,7 @@
                 не переживайте, мы выдадим вам новый.Товар, не дом, конечно же.</p>
             </div>
           </li>
-          <li class="services-list-item service service service-credit">
+          <li class="services-list-item service-credit">
             <div class="service-content-wrapper">
               <h3 class="service-title service-title-credit">Кредит</h3>
 
@@ -184,6 +197,7 @@
           </li>
         </ul>
       </div>
+
     </section>
 
 
