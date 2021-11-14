@@ -1130,10 +1130,12 @@ body {
 }
 
 .catalog-list-product {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
+    display: grid;
+    grid-template-columns: 360px 360px;
+    margin-bottom: 24px;
     list-style: none;
+    gap: 40px;
+    padding: 0;
 }
 
 .card-product-amateur {
