@@ -20,24 +20,25 @@
 
         <li class="top-navigation-item top-navigation-item-text">
           <form class="form-search" action="" method="GET">
-            <input class="form-search-search " type="search" placeholder="Поиск по сайту">
+            <input class="form-search-input" type="search" placeholder="Поиск по сайту">
             <button class="form-search-submit" type="submit">Найти</button>
+
           </form>
         </li>
         <li class="top-navigation-item top-navigation-item-enter">
           <a class="user-menu user-menu-enter" href="#">Войти</a>
         </li>
         <li class="top-navigation-item top-navigation-item-compare">
-          <a class="user-menu" href="#">Сравнить</a>
+          <a class="user-menu user-menu-compare" href="#">Сравнить</a>
         </li>
         <li class="top-navigation-item top-navigation-cart">
-          <a class="user-menu" href="#">Корзина</a>
+          <a class="user-menu user-menu-cart" href="#">Корзина</a>
         </li>
       </ul>
 
       <ul class="navigation-list">
         <li class="navigation-item navigation-item-catalog">
-          <a class="navigation-link " href="#">Каталог товаров</a>
+          <a class="navigation-link navigation-link-catalog" href="#">Каталог товаров</a>
         </li>
         <li class="navigation-item navigation-item-delivery">
           <a class="navigation-link" href="#">Доставка</a>
@@ -69,7 +70,11 @@
               <h2 class="slide-header slide-header-text">Порхает как бабочка, жалит как пчела!</h2>
               <p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
                 замаскированным под стандартную камеру.</p>
-              <a class="button-detailed button-detailed-enter" href="#">Подробнее</a>
+
+              <div class="button-detailed">
+                <a class="button-detailed-enter" href="#">Подробнее</a>
+              </div>
+
 
               <table class="slide-specifications">
                 <tr>
@@ -165,12 +170,13 @@
 
       <div class="services-content-wrapper">
         <div class="services-controls">
-          <button class="services-controls-button services-controls-button-active" type="button">Доставка</button>
-          <button class="services-controls-button" type="button">Гарантия</button>
-          <button class="services-controls-button" type="button">Кредит</button>
+          <button class="services-controls-button services-controls-button-active common-button"
+            type="button">Доставка</button>
+          <button class="services-controls-button common-button" type="button">Гарантия</button>
+          <button class="services-controls-button common-button" type="button">Кредит</button>
         </div>
 
-        <ul class="services-list service-list-content">
+        <ul class="services-list service-list-content service-list-content-item">
           <li class="services-list-item services-list-item-current service-deliver service-deliver-img">
             <div class="service-content-wrapper">
               <h3 class="service-title service-title-delivery">Доставка</h3>
@@ -202,7 +208,17 @@
 
 
     <section class="delivery">
-      <a class="button-delivery" href="#">Доставим редкий товар под заказ</a>
+      <a class="button-delivery button-delivery-item button-delivery-link" href="#">Доставим редкий товар под заказ
+        <span class="delivery-icon">
+          <svg width="2" height="12" viewBox="0 0 2 12" xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <path d="M2 0H0V2H2V0Z" />
+              <path d="M2 4H0V12H2V4Z" />
+            </g>
+          </svg>
+        </span>
+      </a>
+
     </section>
 
 
@@ -222,12 +238,14 @@
         </div>
 
         <ul class="appointment-list">
-          <li class="appointment-list">Меловые линии</li>
-          <li class="appointment-list">СДИК</li>
-          <li class="appointment-list">ТоксБерри</li>
+          <li class="appointment-list appointment-list-text">Меловые линии</li>
+          <li class="appointment-list appointment-list-text">СДИК</li>
+          <li class="appointment-list appointment-list-text">ТоксБерри</li>
         </ul>
+        <div class="button-info">
+          <a class="button-info-text" href="#">Подробнее о нас</a>
+        </div>
 
-        <a class="button-info" href="#">Подробнее о нас</a>
       </section>
 
       <section class="contacts contacts-info">
@@ -247,7 +265,9 @@
           <li class="contacts-schedule-item">пн-пт: с 10:00 до 22:00</li>
           <li class="contacts-schedule-item">сб-вс: с 10:00 до 19:00</li>
         </ul>
-        <a class="button-write" href="#">Напишите нам</a>
+        <div class="button-info">
+          <a class="button-info-text" href="#">Напишите нам</a>
+        </div>
       </section>
     </div>
 
@@ -267,8 +287,9 @@
 
 
       <div class="appointment-mail">
-        <form сlass="appointment" action="">
-          <input type="text" id="appointment-mail" name="appointment-mail" placeholder="Ваш E-mail">
+        <form сlass="appointment appointment-search" action="">
+          <input class="button-search" type="text" id="appointment-mail" name="appointment-mail"
+            placeholder="Ваш E-mail">
           <button class="button-appointment button-appointment-info" type="submit">Подписаться</button>
         </form>
         <p class="text-info">Это бесплатно</p>
