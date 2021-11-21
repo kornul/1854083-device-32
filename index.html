@@ -25,14 +25,14 @@
 
           </form>
         </li>
-        <li class="top-navigation-item top-navigation-item-enter">
-          <a class="user-menu user-menu-enter" href="#">Войти</a>
+        <li class="top-navigation-item top-navigation-item-enter top-navigation-item-link">
+          <a class="user-menu user-menu-enter user-menu-link" href="#">Войти</a>
         </li>
-        <li class="top-navigation-item top-navigation-item-compare">
-          <a class="user-menu user-menu-compare" href="#">Сравнить</a>
+        <li class="top-navigation-item top-navigation-item-compare top-navigation-item-link">
+          <a class="user-menu user-menu-compare user-menu-link" href="#">Сравнить</a>
         </li>
-        <li class="top-navigation-item top-navigation-cart">
-          <a class="user-menu user-menu-cart" href="#">Корзина</a>
+        <li class="top-navigation-item top-navigation-cart top-navigation-item-link">
+          <a class="user-menu user-menu-cart user-menu-link" href="#">Корзина</a>
         </li>
       </ul>
 
@@ -41,13 +41,13 @@
           <a class="navigation-link navigation-link-catalog" href="#">Каталог товаров</a>
         </li>
         <li class="navigation-item navigation-item-delivery">
-          <a class="navigation-link" href="#">Доставка</a>
+          <a class="navigation-link navigation-link-item" href="#">Доставка</a>
         </li>
         <li class="navigation-item navigation-item-warranty">
-          <a class="navigation-link" href="#">Гарантия</a>
+          <a class="navigation-link navigation-link-item" href="#">Гарантия</a>
         </li>
         <li class="navigation-item navigation-item-contacts">
-          <a class="navigation-link" href="#">Контакты</a>
+          <a class="navigation-link navigation-link-item" href="#">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -279,17 +279,14 @@
     <div class="subscribe-container">
       <div class="subscribe-text subscribe-text-info">
         <h2 class="subscribe-text-header">Подпишитесь на рассылку</h2>
-        <p class="description-text description-text-info">Еженедельный дайджест с обзорами новинок, длительными
-          тест-драйвами, распаковками,
-          атакже акции, спецпредложения и вот это вот всё.</p>
+        <p class="description-text description-text-info">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, атакже акции, спецпредложения и вот это вот всё.</p>
       </div>
 
 
 
       <div class="appointment-mail">
-        <form сlass="appointment appointment-search" action="">
-          <input class="button-search" type="text" id="appointment-mail" name="appointment-mail"
-            placeholder="Ваш E-mail">
+        <form class="appointment-form" action="" method="get">
+          <input class="search-input" type="text" id="appointment-mail" name="appointment-mail" placeholder="Ваш E-mail">
           <button class="button-appointment button-appointment-info" type="submit">Подписаться</button>
         </form>
         <p class="text-info">Это бесплатно</p>
